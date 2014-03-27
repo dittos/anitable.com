@@ -90,6 +90,7 @@ title:
   ko: 그래도 세계는 아름답다
 website: http://www.ntv.co.jp/soreseka/
 ---
+ann_id: 15970
 schedule:
 - 04-06 06:30
 - EX
@@ -162,7 +163,6 @@ title:
 website: http://www.vap.co.jp/gokukoku/
 ---
 duration: 3m
-enha_ref: 로도스도 전기#s-3.7
 schedule:
 - 04-06 22:27
 - MX
@@ -430,7 +430,7 @@ title:
 website: http://www.nanana.tv/
 ---
 ann_id: 15893
-enha_ref: 블레이드 앤 소울
+enha_ref: 블레이드 앤 소울/애니메이션
 image: ann15893.jpg
 schedule:
 - 04-04 01:46
@@ -509,6 +509,7 @@ title:
 website: http://akuma-riddle.com/
 ---
 ann_id: 15894
+enha_ref: selector infected WIXOSS
 image: ann15894.jpg
 schedule:
 - 04-04 02:49
@@ -523,7 +524,6 @@ title:
 website: http://selector-wixoss.com/
 ---
 ann_id: 15895
-enha_ref: 충사
 image: ann15895.jpg
 schedule:
 - 04-05 00:00
@@ -568,7 +568,6 @@ title:
 website: http://date-a-live-anime.com/
 ---
 ann_id: 15799
-enha_ref: 페어리 테일/애니메이션
 image: ann15799.jpg
 schedule:
 - 04-05 10:30
@@ -584,7 +583,6 @@ title:
 website: http://www.fairytail-tv.com/
 ---
 ann_id: 15889
-enha_ref: 소년탐정 김전일/애니메이션
 image: ann15889.jpg
 schedule:
 - 04-05 17:30
@@ -594,11 +592,10 @@ studio: 도에이 애니메이션
 title:
   en: Kindaichi Shōnen no Jikenbo R
   ja: 金田一少年の事件簿Ｒ（リターンズ）
-  ko: 김전일 소년 사건부 R (리턴즈)
+  ko: 김전일 소년 사건부 R
 website: http://www.ytv.co.jp/kindaichi_r/
 ---
 ann_id: 15803
-enha_ref: 화성로봇 대결전!
 image: ann15803.jpg
 schedule:
 - 04-05 18:30
