@@ -5,7 +5,7 @@ body {
     margin: 0;
     color: #444;
     font-size: 14px;
-    font-family: Tahoma, Malgun Gothic, sans-serif;
+    font-family: Malgun Gothic, sans-serif;
     line-height: 1;
 }
 a {
@@ -119,7 +119,7 @@ a {
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.25);
 }
 .item-overlay {
-    padding: 10px;
+    padding: 12px 10px;
     position: absolute;
     left: 0; right: 0; bottom: 0;
     color: #fff;
@@ -159,18 +159,35 @@ html.cssgradients .item-overlay {
     text-shadow: 0 1px 0 #000;
     margin: 0;
     line-height: 1.2;
-    padding-bottom: 3px;
+    padding-bottom: 7px;
 }
 .item-info {
     font-size: 13px;
     color: #ddd;
-    line-height: 1.7;
+    padding-bottom: 10px;
     .studio, .source { white-space: nowrap; }
 }
-.item-info-schedule {
+.item-schedule {
+    font-size: 13px;
     color: #fff;
-    .date { font-weight: bold; }
+    padding-bottom: 2px;
+    .date { font-weight: bold; margin-right: 2px; }
     .broadcasts { color: #ccc; font-size: 12px; white-space: nowrap; }
+}
+.item-schedule-icon (@country) {
+    &:before {
+        content: "";
+        background: e(%("url(img/flag-%s.png)", @country)) left center no-repeat;
+        background-size: 16px 16px;
+        padding-left: 22px;
+    }
+}
+.item-schedule-jp {
+    .item-schedule-icon ("jp");
+}
+.item-schedule-kr {
+    .item-schedule-icon ("kr");
+    padding-top: 7px;
 }
 
 @media screen and (max-width: 640px) {
@@ -184,8 +201,9 @@ html.cssgradients .item-overlay {
     .item { width: 50%; }
     .item-title { letter-spacing: -1px; font-size: 15px; }
     .item-info { font-size: 12px; }
-    .item-info-schedule {
+    .item-schedule {
         letter-spacing: -1px;
         .broadcasts { display: none; }
     }
+    .item-schedule-kr .broadcasts { display: inline; }
 }

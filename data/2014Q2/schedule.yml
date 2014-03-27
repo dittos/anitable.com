@@ -7,6 +7,7 @@ schedule:
 - - MX
   - BS11
   - nico
+schedule_kr: ANIPLUS
 source: etc
 studio: 샤프트
 title:
@@ -36,6 +37,7 @@ image: ann15828.jpg
 schedule:
 - 04-06 01:00
 - MX
+schedule_kr: ANIMAX
 source: visualnovel
 studio: 브레인즈 베이스
 title:
@@ -50,6 +52,7 @@ image: ann15701.jpg
 schedule:
 - 04-06 01:50
 - NTV
+schedule_kr: ANIMAX
 source: game
 studio: TYO
 title:
@@ -64,6 +67,7 @@ image: ann15773.jpg
 schedule:
 - 04-06 01:58
 - MBS
+schedule_kr: ANIPLUS
 source: original
 studio: 본즈
 title:
@@ -77,6 +81,7 @@ image: ann15853.jpg
 schedule:
 - 04-06 02:20
 - NTV
+schedule_kr: ANIPLUS
 source: manga
 studio: 스튜디오 삐에로
 title:
@@ -104,6 +109,7 @@ schedule:
 - 04-06 17:00
 - - MBS
   - TBS
+schedule_kr: ANIMAX
 source: manga
 studio: 프로덕션 I.G
 title:
@@ -175,6 +181,7 @@ image: ann15812.jpg
 schedule:
 - 04-06 22:30
 - MX
+schedule_kr: ANIPLUS
 source: manga
 studio: 선라이즈
 title:
@@ -205,6 +212,7 @@ image: ann15721.jpg
 schedule:
 - 04-07 00:00
 - MX
+schedule_kr: ANIPLUS
 source: manga
 studio: 브레인즈 베이스
 title:
@@ -220,6 +228,7 @@ image: ann15801.jpg
 schedule:
 - 04-07 00:30
 - MX
+schedule_kr: ANIPLUS
 source: lightnovel
 studio: 후즈 엔터테인먼트
 title:
@@ -235,6 +244,7 @@ image: ann15793.jpg
 schedule:
 - 04-08 01:05
 - MX
+schedule_kr: ANIPLUS
 source: manga
 studio: ZEXCS
 title:
@@ -276,6 +286,7 @@ image: ann15769.jpg
 schedule:
 - 04-08 22:30
 - AT-X
+schedule_kr: ANIMAX
 source: lightnovel
 studio: 키네마 시트러스
 title:
@@ -318,6 +329,7 @@ image: ann15524.jpg
 schedule:
 - 04-10 01:05
 - MX
+schedule_kr: ANIPLUS
 source: lightnovel
 studio: 본즈
 title:
@@ -332,6 +344,7 @@ image: ann15807.jpg
 schedule:
 - 04-10 01:35
 - MX
+schedule_kr: ANIPLUS
 source: original
 studio:
 - J.C.스태프
@@ -392,6 +405,7 @@ image: ann15852.jpg
 schedule:
 - 04-11 00:50
 - CX
+schedule_kr: ANIPLUS
 source: manga
 studio: 타츠노코 프로덕션
 title:
@@ -406,6 +420,7 @@ image: ann15759.jpg
 schedule:
 - 04-11 01:20
 - CX
+schedule_kr: ANIPLUS
 source: lightnovel
 studio: A-1 픽쳐스
 title:
@@ -420,6 +435,9 @@ image: ann15893.jpg
 schedule:
 - 04-04 01:46
 - TBS
+schedule_kr:
+- 04-05 00:00
+- ANIPLUS
 source: game
 studio: 곤조
 title:
@@ -434,6 +452,7 @@ image: ann15496.jpg
 schedule:
 - 04-11 01:49
 - MBS
+schedule_kr: ANIPLUS
 source: manga
 studio: 폴리곤 픽쳐스
 title:
@@ -464,6 +483,7 @@ image: ann15734.jpg
 schedule:
 - 04-04 02:16
 - TBS
+schedule_kr: ANIMAX
 source: manga
 studio: 브레인즈 베이스
 title:
@@ -479,6 +499,7 @@ image: ann15767.jpg
 schedule:
 - 04-04 02:19
 - MBS
+schedule_kr: ANIPLUS
 source: manga
 studio: 디오메디아
 title:
@@ -492,6 +513,7 @@ image: ann15894.jpg
 schedule:
 - 04-04 02:49
 - MBS
+schedule_kr: ANIPLUS
 source: original
 studio: J.C.스태프
 title:
@@ -506,6 +528,7 @@ image: ann15895.jpg
 schedule:
 - 04-05 00:00
 - MX
+schedule_kr: ANIPLUS
 source: manga
 studio: 아트랜드
 title:
@@ -535,6 +558,7 @@ image: ann15790.jpg
 schedule:
 - 04-12 01:35
 - MX
+schedule_kr: ANIPLUS
 source: lightnovel
 studio: AIC PLUS+
 title:
@@ -579,6 +603,7 @@ image: ann15803.jpg
 schedule:
 - 04-05 18:30
 - AT-X
+schedule_kr: ANIPLUS
 source: manga
 studio: TNK
 title:

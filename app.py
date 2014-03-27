@@ -63,6 +63,10 @@ def multiple(s):
         s = [s]
     return u', '.join(s)
 
+@app.template_filter()
+def is_undetermined_schedule(s):
+    return isinstance(s, basestring)
+
 SOURCE_TYPE_MAP = {
     'manga': u'만화 원작', 
     'original': u'오리지널',

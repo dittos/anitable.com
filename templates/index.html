@@ -44,17 +44,29 @@
             <div class="item-frame">
             <div class="item-overlay">
                 <h3 class="item-title">{{ item.title.ko }}</h3>
-                <div class="item-info item-info-schedule">
-                    <span class="date">{{ item.schedule[0]|format_date }}</span> &middot;
-                    <span class="time">{{ item.schedule[0]|format_time }}</span>
-                    <span class="broadcasts">({{ item.schedule[1]|multiple }})</span>
-                </div>
                 <div class="item-info">
                     <span class="studio">{{ item.studio|multiple or '제작사 미정' }}</span>
                     {% with source = item.source|source_readable %}
                     {% if source %}/ <span class="source">{{ source }}</span>{% endif %}
                     {% endwith %}
                 </div>
+                <div class="item-schedule item-schedule-jp">
+                    <span class="date">{{ item.schedule[0]|format_date }}</span>
+                    <span class="time">{{ item.schedule[0]|format_time }}</span>
+                    <span class="broadcasts">({{ item.schedule[1]|multiple }})</span>
+                </div>
+                {% if item.schedule_kr %}
+                <div class="item-schedule item-schedule-kr">
+                {% if item.schedule_kr|is_undetermined_schedule %}
+                    <span class="date">미정</span>
+                    <span class="broadcasts">({{ item.schedule_kr }})</span>
+                {% else %}
+                    <span class="date">{{ item.schedule_kr[0]|format_date }}</span>
+                    <span class="time">{{ item.schedule_kr[0]|format_time }}</span>
+                    <span class="broadcasts">({{ item.schedule_kr[1]|multiple }})</span>
+                {% endif %}
+                </div>
+                {% endif %}
             </div>
             </div>
             <div class="item-links">
