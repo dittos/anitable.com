@@ -41,6 +41,7 @@
         <div class="item">
         <div class="item-inner">
             <div class="item-poster-wrap"><img src="{{ placeholder_url }}" data-src="{{ item.image|thumb_url }}" width="{{ config.THUMB_SIZE[0] }}" height="{{ config.THUMB_SIZE[1] }}" class="b-lazy item-poster" alt="{{ item.title.ko }}"></div>
+            <div class="item-frame">
             <div class="item-overlay">
                 <h3 class="item-title">{{ item.title.ko }}</h3>
                 <div class="item-info item-info-schedule">
@@ -55,12 +56,16 @@
                     {% endwith %}
                 </div>
             </div>
+            </div>
             <div class="item-links">
                 {% if item.website %}
                 <a href="{{ item.website }}" class="link link-official" target="_blank">공식 사이트</a>
                 {% endif %}
                 {% if item.enha_ref %}
                 <a href="{{ item.enha_ref|enha_link }}" class="link link-enha" target="_blank">엔하위키</a>
+                {% endif %}
+                {% if item.ann_id %}
+                <a href="http://www.animenewsnetwork.com/encyclopedia/anime.php?id={{ item.ann_id }}" class="link link-ann" target="_blank">ANN (en)</a>
                 {% endif %}
             </div>
         </div>
