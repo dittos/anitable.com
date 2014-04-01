@@ -25,7 +25,6 @@
 <div class="header">
 <div class="header-inner">
     <span class="brand"><i class="fa fa-calendar"></i> 애니테이블 <span class="release">beta</span></span>
-    <h1 class="page-title">2014년 4월 신작</h1>
 
     <div class="social">
         <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>
@@ -44,9 +43,18 @@
 </div>
 </div>
 
+<div class="hero">
+    <h2 class="slogan">똑똑한 애니메이션 시간표, 애니테이블</h2>
+    <p class="sub">
+        <span>지금 바로 <span class="btn-fav active"><i class="fa fa-check"></i></span> <b>체크!</b></span>
+        <span>이젠 관심있는 작품만 챙기세요.</span>
+    </p>
+</div>
+
 {% set placeholder_url = 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==' %}
 
 <div class="container">
+    <h1 class="page-title">2014년 4월 신작</h1>
     <div class="items">
     {% for item in data %}
         <div class="item">
@@ -79,6 +87,9 @@
                 </div>
                 {% endif %}
             </div>
+            </div>
+            <div class="item-actions">
+                <a href="#" class="btn-fav"><i class="fa fa-check"></i></a>
             </div>
             <div class="item-links">
                 {% if item.website %}

@@ -1,4 +1,5 @@
 @page-width: 962px;
+@header-height: 64px;
 @grid-spacing: 10px;
 
 body {
@@ -20,18 +21,43 @@ a {
     }
 }
 
+@hero-bg: #34495e;
+.hero {
+    margin-top: @header-height;
+    padding: 40px 0 30px;
+    background: @hero-bg;
+    color: #fff;
+    text-align: center;
+    .slogan {
+        font-size: 28px;
+        text-shadow: 0 2px 1px darken(@hero-bg, 20%);
+        margin: 0;
+        padding-bottom: 20px;
+    }
+    .sub {
+        font-size: 20px;
+        text-shadow: 0 1px 0 darken(@hero-bg, 20%);
+        margin: 0;
+        span { white-space: nowrap; }
+        .btn-fav { display: inline-block; }
+    }
+}
+
 .container {
     max-width: @page-width;
-    margin: 80px auto 20px;
+    margin: 20px auto;
     padding: 0 @grid-spacing;
 }
+
 .header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 100;
-    padding: 20px @grid-spacing;
+    height: @header-height;
+    line-height: @header-height;
+    padding: 0 @grid-spacing;
     overflow: hidden;
     background: #f4f4f4;
     border-bottom: 1px solid #ccc;
@@ -43,22 +69,15 @@ a {
         max-width: @page-width;
     }
 
-    .brand, .page-title { float: left; }
-
     .brand {
+        float: left;
         color: #2c3e50;
-        margin-right: 20px;
         .release {
             font-size: 12px;
             font-weight: bold;
             color: #27ae60;
             vertical-align: top;
         }
-    }
-
-    .page-title {
-        margin: 0;
-        font-size: 1em;
     }
 
     .social {
@@ -71,6 +90,11 @@ a {
     margin: 20px 0 40px;
     font-size: 12px;
     color: #999;
+}
+.page-title {
+    font-size: 20px;
+    text-align: center;
+    margin: 0 0 20px;
 }
 .items {
     clear: both;
@@ -132,6 +156,45 @@ html.cssgradients .item-overlay {
     background: -webkit-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 50%, rgba(0, 0, 0, 0.9) 100%);
     background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 50%, rgba(0, 0, 0, 0.9) 100%);
 }
+.btn-circle (@size) {
+    display: block;
+    width: @size;
+    height: @size;
+    line-height: @size;
+    text-align: center;
+    border-radius: 999em;
+}
+.expand-hitbox (@delta) {
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        top: -@delta; left: -@delta; right: -@delta; bottom: -@delta;
+    }
+}
+.item-actions {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
+.btn-fav {
+    .btn-circle (32px);
+    text-decoration: none;
+    background: #fff;
+    color: #444;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 8px #222;
+    font-size: 18px;
+    transition: background-color 0.1s ease, color 0.1s ease;
+    &:hover, &.active {
+        background-color: #27ae60;
+        color: #fff;
+    }
+}
+html.touch .btn-fav {
+    .expand-hitbox (12px);
+}
 .item-links {
     position: absolute;
     left: 0; right: 0; bottom: 0;
@@ -191,14 +254,22 @@ html.cssgradients .item-overlay {
     padding-top: 7px;
 }
 
+@media screen and (max-width: 960px) {
+    .item { width: 33.3333%; }
+}
+
 @media screen and (max-width: 640px) {
     .header {
+        height: 44px;
+        line-height: 44px;
         font-size: 16px;
-        text-align: center;
-        .social { display: none; }
-        .brand, .page-title { display: inline; float: none; }
     }
-    .container { margin-top: 70px; }
+    .hero {
+        margin-top: 44px;
+        padding: 30px 0 20px;
+        .slogan { font-size: 20px; padding-bottom: 10px; }
+        .sub { font-size: 16px; }
+    }
     .item { width: 50%; }
     .item-title { letter-spacing: -1px; font-size: 15px; }
     .item-info { font-size: 12px; }
