@@ -20,11 +20,18 @@
       ga('send', 'pageview');
     </script>
 </head>
-<body>
+<body class="{% if g.account %}logged-in{% endif %}">
 
 <div class="header">
 <div class="header-inner">
     <span class="brand"><i class="fa fa-calendar"></i> 애니테이블 <span class="release">beta</span></span>
+
+{% if g.account %}
+    <div class="account">
+        <i class="fa fa-user"></i> {{ g.account.screen_name }}
+        <a href="{{ url_for('logout') }}">(로그아웃)</a>
+    </div>
+{% endif %}
 
     <div class="social">
         <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>
@@ -43,13 +50,19 @@
 </div>
 </div>
 
+<div class="body">
+{% if not g.account %}
 <div class="hero">
     <h2 class="slogan">똑똑한 애니메이션 시간표, 애니테이블</h2>
-    <p class="sub">
+    <div class="sub">
         <span>지금 바로 <span class="btn-fav active"><i class="fa fa-check"></i></span> <b>체크!</b></span>
         <span>이젠 관심있는 작품만 챙기세요.</span>
-    </p>
+    </div>
+    <div class="login">
+        <a href="{{ url_for('login') }}" class="btn-login"><i class="fa fa-twitter"></i> 트위터 아이디로 로그인</a>
+    </div>
 </div>
+{% endif %}
 
 {% set placeholder_url = 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==' %}
 
@@ -110,6 +123,7 @@
 
 <div class="footer">
     2014, <a href="http://sapzil.org/">지속 가능한 삽질</a>
+</div>
 </div>
 
 <script type="text/javascript" src="//cdn.jsdelivr.net/blazy/1.2.0/blazy.min.js"></script>

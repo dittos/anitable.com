@@ -20,10 +20,12 @@ a {
         background-color: lighten(@color, 5%);
     }
 }
+.body {
+    padding-top: @header-height;
+}
 
 @hero-bg: #34495e;
 .hero {
-    margin-top: @header-height;
     padding: 40px 0 30px;
     background: @hero-bg;
     color: #fff;
@@ -32,14 +34,22 @@ a {
         font-size: 28px;
         text-shadow: 0 2px 1px darken(@hero-bg, 20%);
         margin: 0;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
     }
     .sub {
-        font-size: 20px;
+        font-size: 18px;
         text-shadow: 0 1px 0 darken(@hero-bg, 20%);
-        margin: 0;
+        padding-bottom: 15px;
         span { white-space: nowrap; }
         .btn-fav { display: inline-block; }
+    }
+    .btn-login {
+        display: inline-block;
+        border-radius: 5px;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-size: 16px;
+        .btn-hover-border (#55acee, #292f33);
     }
 }
 
@@ -55,9 +65,7 @@ a {
     left: 0;
     right: 0;
     z-index: 100;
-    height: @header-height;
-    line-height: @header-height;
-    padding: 0 @grid-spacing;
+    padding: 20px @grid-spacing;
     overflow: hidden;
     background: #f4f4f4;
     border-bottom: 1px solid #ccc;
@@ -83,6 +91,14 @@ a {
     .social {
         float: right;
         .twitter-share-button, .fb-share-button { float: left; }
+    }
+    
+    .account {
+        margin-left: 40px;
+        float: right;
+        font-size: 16px;
+        font-weight: bold;
+        a { font-weight: normal; }
     }
 }
 .footer {
@@ -178,19 +194,26 @@ html.cssgradients .item-overlay {
     right: 0;
     padding: 10px;
 }
+.btn-hover-border (@color, @text-color: #444) {
+    background: #fff;
+    color: @text-color;
+    border: 3px solid #fff;
+    transition: background-color 0.1s ease, border-color 0.1s ease, color 0.1s ease;
+    &:hover {
+        border-color: @color;
+    }
+    &:active, &.active {
+        border-color: @color;
+        color: #fff;
+        background-color: @color;
+    }
+}
 .btn-fav {
     .btn-circle (32px);
     text-decoration: none;
-    background: #fff;
-    color: #444;
-    border: 3px solid #fff;
     box-shadow: 0 2px 8px #222;
     font-size: 18px;
-    transition: background-color 0.1s ease, color 0.1s ease;
-    &:hover, &.active {
-        background-color: #27ae60;
-        color: #fff;
-    }
+    .btn-hover-border (#27ae60);
 }
 html.touch .btn-fav {
     .expand-hitbox (12px);
@@ -260,15 +283,16 @@ html.touch .btn-fav {
 
 @media screen and (max-width: 640px) {
     .header {
-        height: 44px;
-        line-height: 44px;
         font-size: 16px;
+        padding: 12px 10px;
     }
+    .logged-in .header .social { display: none; }
+    .body { padding-top: 44px; }
     .hero {
-        margin-top: 44px;
         padding: 30px 0 20px;
-        .slogan { font-size: 20px; padding-bottom: 10px; }
+        .slogan { font-size: 22px; padding-bottom: 5px; }
         .sub { font-size: 16px; }
+        .btn-login { font-size: 14px; }
     }
     .item { width: 50%; }
     .item-title { letter-spacing: -1px; font-size: 15px; }
