@@ -34,7 +34,7 @@ if ($('body').is('.logged-in')) {
             favPanel.data('hideTimerId', null)
                 .addClass('hidden');
         }, duration);
-        favPanel.data('hideTimerId', null);
+        favPanel.data('hideTimerId', timerId);
     }
 
     items.each(function() {
