@@ -68,9 +68,11 @@
 
 <div class="container">
     <h1 class="page-title">2014년 4월 신작</h1>
+
+    <form method="post" action="{{ url_for('save') }}">
     <div class="items">
     {% for item in data %}
-        <div class="item">
+        <div class="item" data-id="{{ item.id }}">
         <div class="item-inner">
             <div class="item-poster-wrap"><img src="{{ placeholder_url }}" data-src="{{ item.image|thumb_url }}" width="{{ config.THUMB_SIZE[0] }}" height="{{ config.THUMB_SIZE[1] }}" class="b-lazy item-poster" alt="{{ item.title.ko }}"></div>
             <div class="item-frame">
@@ -102,7 +104,10 @@
             </div>
             </div>
             <div class="item-actions">
-                <a href="#" class="btn-fav"><i class="fa fa-check"></i></a>
+                <label class="btn-fav">
+                    <input type="checkbox" name="ids[]" value="{{ item.id }}">
+                    <i class="fa fa-check"></i>
+                </label>
             </div>
             <div class="item-links">
                 {% if item.website %}
@@ -119,6 +124,14 @@
         </div>
     {% endfor %}
     </div>
+
+    <div class="panel-fav hidden">
+    <div class="panel-fav-inner">
+        작품 <span class="count">0</span>개를 선택했습니다.
+        <button type="submit" class="btn-save">저장</button>
+    </div>
+    </div>
+    </form>
 </div>
 
 <div class="footer">
@@ -126,6 +139,7 @@
 </div>
 </div>
 
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1.11.0/jquery.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/blazy/1.2.0/blazy.min.js"></script>
 <script>
 // Disable lazy loading on mobile browsers.
@@ -133,12 +147,14 @@ if (!/i(Phone|Pad|Pod)|Android/.test(navigator.userAgent)) {
     document.documentElement.className += ' b-fade';
     window.blazy = new Blazy;
 } else {
-    var nodes = document.getElementsByClassName('b-lazy');
-    var len = nodes.length;
-    for (var i = 0; i < len; i++) {
-        nodes[i].src = nodes[i].getAttribute('data-src');
-    }
+    $('.b-lazy').each(function() {
+        this.src = this.getAttribute('data-src');
+    });
 }
+
+var AppState = {};
+{% if favs %}AppState.favIds = {{ favs|tojson|safe }};{% endif %}
 </script>
+<script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
 </body>
 </html>

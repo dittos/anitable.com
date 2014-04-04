@@ -36,6 +36,10 @@ class PeriodConverter(BaseConverter):
 
 app.url_map.converters['period'] = PeriodConverter
 
+def require_login():
+    if not flask.g.account:
+        flask.abort(403)
+
 @app.route('/')
 def index():
     return flask.redirect(flask.url_for('schedule', period='2014Q2'))
@@ -48,7 +52,11 @@ def schedule(period):
     with open(path) as fp:
         data = list(yaml.load_all(fp))
     data.sort(key=lambda item: item['schedule'][0])
-    return flask.render_template('index.html', data=data)
+    if flask.g.account:
+        favs = db.get_favorites(flask.g.user_id)
+    else:
+        favs = []
+    return flask.render_template('index.html', data=data, favs=favs)
 
 @app.route('/media/<path:path>')
 def media(path):
@@ -61,11 +69,22 @@ def load_account():
     if user_id:
         account = db.get_account(user_id)
     flask.g.account = account or {}
+    flask.g.user_id = user_id
 
 @app.route('/login')
 def login():
-    callback_url = flask.url_for('login_complete', popup=flask.request.args.get('popup'))
+    callback_url = flask.url_for('login_complete')
     return twitter.authorize(callback_url)
+
+@app.route('/save', methods=['POST'])
+def save():
+    ids = flask.request.form.getlist('ids[]')
+    if flask.g.account:
+        db.add_favorites(flask.g.user_id, ids)
+        return flask.redirect('/')
+    else:
+        flask.session['temp_session_id'] = db.save_temp_session(ids, 60 * 60) # 1 hour
+        return login()
 
 @app.route('/login/complete')
 @twitter.authorized_handler
@@ -79,19 +98,28 @@ def login_complete(resp):
         account['created_at'] = time.time()
     db.put_account(user_id, account)
     flask.session['user_id'] = user_id
-
-    if flask.request.args.get('popup') == 'yes':
-        js = 'opener.onTwitterConnect(true); window.close()'
-        rv = flask.make_response('<script>%s</script>' % js)
-        rv.mimetype = 'text/html'
-        return rv
-    else:
-        return flask.redirect('/')
+    sid = flask.session.pop('temp_session_id', default=None)
+    if sid:
+        ids = db.pop_temp_session(sid)
+        db.add_favorites(user_id, ids)
+    return flask.redirect('/')
 
 @app.route('/logout')
 def logout():
     del flask.session['user_id']
     return flask.redirect('/')
+
+@app.route('/fav', methods=['POST'])
+def add_favorite():
+    require_login()
+    db.add_favorites(flask.g.user_id, [flask.request.form['id']])
+    return flask.jsonify(ok=True)
+
+@app.route('/fav/remove', methods=['POST'])
+def remove_favorite():
+    require_login()
+    db.remove_favorite(flask.g.user_id, flask.request.form['id'])
+    return flask.jsonify(ok=True)
 
 @app.template_filter()
 def format_date(s):

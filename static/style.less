@@ -1,16 +1,21 @@
 @page-width: 962px;
-@header-height: 64px;
+@header-height: 60px;
 @grid-spacing: 10px;
 
 body {
     margin: 0;
     color: #444;
     font-size: 14px;
-    font-family: Malgun Gothic, sans-serif;
     line-height: 1;
+}
+body, button {
+    font-family: Malgun Gothic, sans-serif;
 }
 a {
     color: #666;
+}
+form {
+    margin: 0;
 }
 
 .btn(@color) {
@@ -193,6 +198,7 @@ html.cssgradients .item-overlay {
     top: 0;
     right: 0;
     padding: 10px;
+    .btn-fav { cursor: pointer; }
 }
 .btn-hover-border (@color, @text-color: #444) {
     background: #fff;
@@ -214,6 +220,13 @@ html.cssgradients .item-overlay {
     box-shadow: 0 2px 8px #222;
     font-size: 18px;
     .btn-hover-border (#27ae60);
+    position: relative;
+    input {
+        position: absolute;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        cursor: pointer;
+    }
 }
 html.touch .btn-fav {
     .expand-hitbox (12px);
@@ -277,6 +290,40 @@ html.touch .btn-fav {
     padding-top: 7px;
 }
 
+.panel-fav-inner { max-width: @page-width; margin: 0 auto; }
+.panel-fav {
+    box-shadow: 0 2px 8px #222;
+    background: #27ae60;
+    background: fadeout(#27ae60, 5%);
+    padding: 30px 10px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+
+    transition: opacity 250ms ease, bottom 250ms ease;
+    opacity: 1;
+
+    &.hidden {
+        bottom: -100px;
+        opacity: 0;
+    }
+
+    .btn-save {
+        display: inline-block;
+        border-radius: 5px;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-size: 16px;
+        cursor: pointer;
+        .btn-hover-border (@hero-bg);
+    }
+}
+
 @media screen and (max-width: 960px) {
     .item { width: 33.3333%; }
 }
@@ -302,4 +349,5 @@ html.touch .btn-fav {
         .broadcasts { display: none; }
     }
     .item-schedule-kr .broadcasts { display: inline; }
+    .panel-fav { padding: 20px 10px; }
 }
