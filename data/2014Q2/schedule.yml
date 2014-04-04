@@ -72,7 +72,9 @@ image: ann15773.jpg
 schedule:
 - 04-06 01:58
 - MBS
-schedule_kr: ANIPLUS
+schedule_kr:
+- 04-07 22:30
+- ANIPLUS
 source: original
 studio: 본즈
 title:
@@ -87,7 +89,9 @@ image: ann15853.jpg
 schedule:
 - 04-06 02:20
 - NTV
-schedule_kr: ANIPLUS
+schedule_kr: # 방송사정으로 인해 첫화만 일요일 편성, 이후 화요일 밤 편성예정
+- 04-13 18:30
+- ANIPLUS
 source: manga
 studio: 스튜디오 삐에로
 title:
@@ -165,6 +169,9 @@ image: ann15757.jpg
 schedule:
 - 04-06 22:00
 - MX
+schedule_kr:
+- 04-10 00:00
+- ANIPLUS
 source: manga
 studio: 암즈
 title:
@@ -194,7 +201,9 @@ image: ann15812.jpg
 schedule:
 - 04-06 22:30
 - MX
-schedule_kr: ANIPLUS
+schedule_kr:
+- 04-08 22:00
+- ANIPLUS
 source: manga
 studio: 선라이즈
 title:
@@ -227,7 +236,9 @@ image: ann15721.jpg
 schedule:
 - 04-07 00:00
 - MX
-schedule_kr: ANIPLUS
+schedule_kr:
+- 04-09 22:30
+- ANIPLUS
 source: manga
 studio: 브레인즈 베이스
 title:
@@ -244,7 +255,9 @@ image: ann15801.jpg
 schedule:
 - 04-07 00:30
 - MX
-schedule_kr: ANIPLUS
+schedule_kr:
+- 04-09 00:00
+- ANIPLUS
 source: lightnovel
 studio: 후즈 엔터테인먼트
 title:
@@ -261,7 +274,9 @@ image: ann15793.jpg
 schedule:
 - 04-08 01:05
 - MX
-schedule_kr: ANIPLUS
+schedule_kr:
+- 04-11 00:30
+- ANIPLUS
 source: manga
 studio: ZEXCS
 title:
@@ -336,6 +351,9 @@ image: ann15784.jpg
 schedule:
 - 04-09 21:30
 - AT-X
+schedule_kr:
+- 04-11 22:30
+- ANIPLUS
 source: lightnovel
 studio: 매드하우스
 title:
@@ -352,7 +370,9 @@ image: ann15524.jpg
 schedule:
 - 04-10 01:05
 - MX
-schedule_kr: ANIPLUS
+schedule_kr:
+- 04-11 22:00
+- ANIPLUS
 source: lightnovel
 studio: 본즈
 title:
@@ -368,7 +388,9 @@ image: ann15807.jpg
 schedule:
 - 04-10 01:35
 - MX
-schedule_kr: ANIPLUS
+schedule_kr:
+- 04-11 23:00
+- ANIPLUS
 source: original
 studio:
 - J.C.스태프
@@ -483,7 +505,9 @@ image: ann15496.jpg
 schedule:
 - 04-11 01:49
 - MBS
-schedule_kr: ANIPLUS
+schedule_kr:
+- 04-11 23:30
+- ANIPLUS
 source: manga
 studio: 폴리곤 픽쳐스
 title:
@@ -533,7 +557,9 @@ image: ann15767.jpg
 schedule:
 - 04-04 02:19
 - MBS
-schedule_kr: ANIPLUS
+schedule_kr:
+- 04-10 22:00
+- ANIPLUS
 source: manga
 studio: 디오메디아
 title:
@@ -549,7 +575,9 @@ image: ann15894.jpg
 schedule:
 - 04-04 02:49
 - MBS
-schedule_kr: ANIPLUS
+schedule_kr:
+- 04-09 23:00
+- ANIPLUS
 source: original
 studio: J.C.스태프
 title:
@@ -564,7 +592,9 @@ image: ann15895.jpg
 schedule:
 - 04-05 00:00
 - MX
-schedule_kr: ANIPLUS
+schedule_kr:
+- 04-07 23:00
+- ANIPLUS
 source: manga
 studio: 아트랜드
 title:
@@ -641,7 +671,9 @@ image: ann15803.jpg
 schedule:
 - 04-05 18:30
 - AT-X
-schedule_kr: ANIPLUS
+schedule_kr:
+- 04-08 00:00
+- ANIPLUS
 source: manga
 studio: TNK
 title:
@@ -657,6 +689,9 @@ image: ann15707.jpg
 schedule:
 - 04-05 20:30
 - AT-X
+schedule_kr:
+- 04-11 00:00
+- ANIPLUS
 source: lightnovel
 studio: C-Station
 title:
