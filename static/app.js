@@ -88,10 +88,11 @@ if ($('body').is('.logged-in')) {
         favPanel.toggleClass('hidden', count == 0);
     });
 
-    favPanel.find('.btn-save')
-        .prop('disabled', false) // reset button state on load
-        .on('click', function() {
-            $(this).prop('disabled', true)
-                .text('로그인 중...');
-        });
+    // reset button state on load
+    var saveButton = favPanel.find('.btn-save');
+    saveButton.prop('disabled', false);
+    $('.save-form').submit(function() {
+        saveButton.prop('disabled', true)
+            .text('로그인 중...');
+    });
 }

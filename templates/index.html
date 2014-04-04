@@ -69,7 +69,7 @@
 <div class="container">
     <h1 class="page-title">2014년 4월 신작</h1>
 
-    <form method="post" action="{{ url_for('save') }}">
+    <form method="post" action="{{ url_for('save') }}" class="save-form">
     <div class="items">
     {% for item in data %}
         <div class="item" data-id="{{ item.id }}">
