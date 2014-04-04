@@ -108,7 +108,29 @@ form {
 .page-title {
     font-size: 20px;
     text-align: center;
+    margin: 0;
+}
+.page-header {
     margin: 0 0 20px;
+    position: relative;
+    .only-fav {
+        position: absolute;
+        line-height: 20px;
+        right: 0;
+    
+        a {
+            text-decoration: none;
+            margin-left: 10px;
+            color: #666;
+        }
+        a:hover {
+            color: #27ae60;
+        }
+        .active {
+            font-weight: bold;
+            color: #27ae60;
+        }
+    }
 }
 .items {
     clear: both;
@@ -119,6 +141,10 @@ form {
     float: left;
     margin-bottom: @grid-spacing;
     width: 25%;
+}
+.show-if-fav {
+    display: none;
+    &.state-fav { display: block; }
 }
 .item-inner {
     margin-left: @grid-spacing;
@@ -335,6 +361,9 @@ html.touch .btn-fav {
         .slogan { font-size: 22px; padding-bottom: 5px; }
         .sub { font-size: 16px; }
         .btn-login { font-size: 14px; }
+    }
+    .logged-in .page-title {
+        text-align: left;
     }
     .item { width: 50%; }
     .item-title { letter-spacing: -1px; font-size: 15px; }

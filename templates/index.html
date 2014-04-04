@@ -67,7 +67,15 @@
 {% set placeholder_url = 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==' %}
 
 <div class="container">
-    <h1 class="page-title">2014년 4월 신작</h1>
+    <div class="page-header">
+    {% if g.account %}
+        <div class="only-fav">
+            <a href="#all" class="off">전체 작품</a>
+            <a href="#only-fav" class="on">관심 작품만</a>
+        </div>
+    {% endif %}
+        <h1 class="page-title">2014년 4월 신작</h1>
+    </div>
 
     <form method="post" action="{{ url_for('save') }}" class="save-form">
     <div class="items">
@@ -159,6 +167,7 @@ var AppState = {};
 {% with flashes = get_flashed_messages() %}
 {% if flashes %}AppState.flashes = {{ flashes|tojson|safe }};{% endif %}
 {% endwith %}
+AppState.settings = {};
 </script>
 <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
 </body>

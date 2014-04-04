@@ -66,6 +66,27 @@ if ($('body').is('.logged-in')) {
         $el.data('activeRequest', req).trigger('stateChange');
     });
 
+    function updateSettings(key, value) {
+        AppState.settings[key] = value;
+    }
+
+    $('.only-fav').on('stateChange', function() {
+        $(this).find('a').removeClass('active');
+        var state = Boolean(AppState.settings.onlyFav);
+        $(this).find(state ? '.on' : '.off').addClass('active');
+        items.toggleClass('show-if-fav', state);
+        window.scrollTo(0, 0);
+        window.blazy && window.blazy.revalidate();
+    }).on('click', '.on', function(event) {
+        updateSettings('onlyFav', true);
+        $(event.delegateTarget).trigger('stateChange');
+        return false;
+    }).on('click', '.off', function(event) {
+        updateSettings('onlyFav', false);
+        $(event.delegateTarget).trigger('stateChange');
+        return false;
+    }).trigger('stateChange');
+
     $(function() {
         $.each(AppState.flashes, function(i, message) {
             showToast(message, 5000);
