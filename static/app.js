@@ -57,18 +57,18 @@ if ($('body').is('.logged-in')) {
         $el.toggleClass('state-fav', fav).trigger('stateChange');
         req.then(function() {
             $el.trigger('stateChange');
-            showToast(fav ? '관심 체크!' : '관심 체크 해제', 500);
+            showToast(fav ? '관심 체크!' : '관심 체크 해제', 1000);
         }, function() {
             // Rollback on failure
             $el.toggleClass('state-fav', !fav).trigger('stateChange');
-            showToast('오류 발생! 잠시 후에 다시 시도해주세요.', 3000);
+            showToast('오류 발생! 잠시 후에 다시 시도해주세요.', 5000);
         });
         $el.data('activeRequest', req).trigger('stateChange');
     });
 
     $(function() {
         $.each(AppState.flashes, function(i, message) {
-            showToast(message, 3000);
+            showToast(message, 5000);
         });
     });
 } else {

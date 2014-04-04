@@ -18,13 +18,6 @@ form {
     margin: 0;
 }
 
-.btn(@color) {
-    background-color: @color;
-    transition: 0.1s ease background-color;
-    &:hover {
-        background-color: lighten(@color, 5%);
-    }
-}
 .body {
     padding-top: @header-height;
 }
@@ -357,4 +350,8 @@ html.touch .btn-fav {
         font-weight: bold;
         line-height: 1.5;
     }
+
+    // Disable transitions
+    .btn-fav, .btn-save, .btn-login
+    { transition: none; }
 }
