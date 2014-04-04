@@ -24,6 +24,19 @@ if ($('body').is('.logged-in')) {
         return $.post(url, {id: id});
     }
 
+    function showToast(message, duration) {
+        favPanel.removeClass('hidden');
+        favPanel.find('.panel-fav-inner').text(message);
+        var timerId = favPanel.data('hideTimerId');
+        if (timerId)
+            window.clearTimeout(timerId);
+        timerId = window.setTimeout(function() {
+            favPanel.data('hideTimerId', null)
+                .addClass('hidden');
+        }, duration);
+        favPanel.data('hideTimerId', null);
+    }
+
     items.each(function() {
         var $el = $(this);
         var id = $el.data('id');
@@ -44,13 +57,19 @@ if ($('body').is('.logged-in')) {
         $el.toggleClass('state-fav', fav).trigger('stateChange');
         req.then(function() {
             $el.trigger('stateChange');
-            // TODO: alert to user
+            showToast(fav ? '관심 체크!' : '관심 체크 해제', 500);
         }, function() {
             // Rollback on failure
             $el.toggleClass('state-fav', !fav).trigger('stateChange');
-            // TODO: alert to user
+            showToast('오류 발생! 잠시 후에 다시 시도해주세요.', 3000);
         });
         $el.data('activeRequest', req).trigger('stateChange');
+    });
+
+    $(function() {
+        $.each(AppState.flashes, function(i, message) {
+            showToast(message, 3000);
+        });
     });
 } else {
     items.on('change', 'input:checkbox', function(event) {

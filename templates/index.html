@@ -127,8 +127,10 @@
 
     <div class="panel-fav hidden">
     <div class="panel-fav-inner">
+    {% if not g.account %}
         작품 <span class="count">0</span>개를 선택했습니다.
         <button type="submit" class="btn-save">저장</button>
+    {% endif %}
     </div>
     </div>
     </form>
@@ -154,6 +156,9 @@ if (!/i(Phone|Pad|Pod)|Android/.test(navigator.userAgent)) {
 
 var AppState = {};
 {% if favs %}AppState.favIds = {{ favs|tojson|safe }};{% endif %}
+{% with flashes = get_flashed_messages() %}
+{% if flashes %}AppState.flashes = {{ flashes|tojson|safe }};{% endif %}
+{% endwith %}
 </script>
 <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
 </body>

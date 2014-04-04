@@ -102,6 +102,7 @@ def login_complete(resp):
     if sid:
         ids = db.pop_temp_session(sid)
         db.add_favorites(user_id, ids)
+        flask.flash(u'환영합니다! 선택하신 작품 %d개가 관심 체크 됐습니다.' % len(ids))
     return flask.redirect('/')
 
 @app.route('/logout')
@@ -187,4 +188,4 @@ def enha_link(ref):
     return url
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0')
