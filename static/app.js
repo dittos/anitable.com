@@ -116,4 +116,11 @@ if ($('body').is('.logged-in')) {
         saveButton.prop('disabled', true)
             .text('로그인 중...');
     });
+
+    // reconcile checkbox state on load
+    items.each(function() {
+        var $el = $(this);
+        var state = $el.find('input:checkbox').prop('checked');
+        $el.toggleClass('state-fav', state).trigger('stateChange');
+    });
 }
