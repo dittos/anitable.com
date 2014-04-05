@@ -56,7 +56,8 @@ def schedule(period):
         favs = db.get_favorites(flask.g.user_id)
     else:
         favs = []
-    return flask.render_template('index.html', data=data, favs=favs)
+    settings = db.get_settings(flask.g.user_id)
+    return flask.render_template('index.html', data=data, favs=favs, settings=settings)
 
 @app.route('/media/<path:path>')
 def media(path):
@@ -120,6 +121,12 @@ def add_favorite():
 def remove_favorite():
     require_login()
     db.remove_favorite(flask.g.user_id, flask.request.form['id'])
+    return flask.jsonify(ok=True)
+
+@app.route('/settings', methods=['POST'])
+def save_settings():
+    require_login()
+    db.save_settings(flask.g.user_id, flask.request.get_json())
     return flask.jsonify(ok=True)
 
 @app.template_filter()

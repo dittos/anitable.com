@@ -44,3 +44,17 @@ def pop_temp_session(sid):
     if not value:
         return None
     return json.loads(value)
+
+SETTINGS_KEYS = ('onlyFav', )
+
+def save_settings(user_id, settings):
+    data = {}
+    for key in SETTINGS_KEYS:
+        data[key] = settings.get(key)
+    REDIS.hset('account_settings', user_id, json.dumps(data))
+
+def get_settings(user_id):
+    data = REDIS.hget('account_settings', user_id)
+    if not data:
+        return {}
+    return json.loads(data)

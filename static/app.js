@@ -68,22 +68,29 @@ if ($('body').is('.logged-in')) {
 
     function updateSettings(key, value) {
         AppState.settings[key] = value;
+        $.ajax({
+            type: 'POST',
+            url: '/settings',
+            data: JSON.stringify(AppState.settings),
+            contentType: 'application/json'
+        });
     }
 
-    $('.only-fav').on('stateChange', function() {
+    $('.only-fav').on('stateChange', function(event, data) {
         $(this).find('a').removeClass('active');
         var state = Boolean(AppState.settings.onlyFav);
         $(this).find(state ? '.on' : '.off').addClass('active');
         items.toggleClass('show-if-fav', state);
-        window.scrollTo(0, 0);
+        if (data && data.userTriggered)
+            window.scrollTo(0, 0);
         window.blazy && window.blazy.revalidate();
     }).on('click', '.on', function(event) {
         updateSettings('onlyFav', true);
-        $(event.delegateTarget).trigger('stateChange');
+        $(event.delegateTarget).trigger('stateChange', {userTriggered: true});
         return false;
     }).on('click', '.off', function(event) {
         updateSettings('onlyFav', false);
-        $(event.delegateTarget).trigger('stateChange');
+        $(event.delegateTarget).trigger('stateChange', {userTriggered: true});
         return false;
     }).trigger('stateChange');
 
@@ -122,5 +129,15 @@ if ($('body').is('.logged-in')) {
         var $el = $(this);
         var state = $el.find('input:checkbox').prop('checked');
         $el.toggleClass('state-fav', state).trigger('stateChange');
+    });
+}
+
+// Disable lazy loading on mobile browsers.
+if (!/i(Phone|Pad|Pod)|Android/.test(navigator.userAgent)) {
+    document.documentElement.className += ' b-fade';
+    window.blazy = new Blazy;
+} else {
+    $('.b-lazy').each(function() {
+        this.src = this.getAttribute('data-src');
     });
 }

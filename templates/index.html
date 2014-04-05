@@ -152,22 +152,12 @@
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1.11.0/jquery.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/blazy/1.2.0/blazy.min.js"></script>
 <script>
-// Disable lazy loading on mobile browsers.
-if (!/i(Phone|Pad|Pod)|Android/.test(navigator.userAgent)) {
-    document.documentElement.className += ' b-fade';
-    window.blazy = new Blazy;
-} else {
-    $('.b-lazy').each(function() {
-        this.src = this.getAttribute('data-src');
-    });
-}
-
 var AppState = {};
 {% if favs %}AppState.favIds = {{ favs|tojson|safe }};{% endif %}
 {% with flashes = get_flashed_messages() %}
 {% if flashes %}AppState.flashes = {{ flashes|tojson|safe }};{% endif %}
 {% endwith %}
-AppState.settings = {};
+AppState.settings = {{ settings|tojson|safe }};
 </script>
 <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
 </body>
