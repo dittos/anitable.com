@@ -86,6 +86,7 @@ title:
 website: http://captain-earth.net/
 ---
 ann_id: 15853
+enha_ref: 그럼에도 세상은 아름답다
 id: 643f9e7b
 image: ann15853.jpg
 schedule:
@@ -99,7 +100,7 @@ studio: 스튜디오 삐에로
 title:
   en: Soredemo Sekai wa Utsukushii
   ja: それでも世界は美しい
-  ko: 그래도 세계는 아름답다
+  ko: 그럼에도 세상은 아름답다
 website: http://www.ntv.co.jp/soreseka/
 ---
 ann_id: 15970
@@ -235,6 +236,7 @@ title:
 website: http://breakblade.jp/
 ---
 ann_id: 15721
+enha_ref: 일주일간 친구
 id: b23e422d
 image: ann15721.jpg
 schedule:
@@ -437,7 +439,7 @@ title:
   ko: 주문은 토끼입니까?
 website: http://www.gochiusa.com/
 ---
-anidb_id: 10398
+ann_id: 15972
 duration: 5m
 eps: 12
 id: 0442d0b2
@@ -674,6 +676,7 @@ title:
 website: http://www.ytv.co.jp/kindaichi_r/
 ---
 ann_id: 15803
+enha_ref: 건전로봇 다이미다라
 id: c56a1663
 image: ann15803.jpg
 schedule:
