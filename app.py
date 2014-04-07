@@ -40,6 +40,13 @@ def require_login():
     if not flask.g.account:
         flask.abort(403)
 
+def process_item(item):
+    date = parse_date(item['schedule'][0])
+    day = datetime.timedelta(days=1)
+    if date + day < datetime.datetime.now():
+        date = date + 7 * day
+        item['schedule'][0] = date.strftime('%m-%d %H:%M')
+
 @app.route('/')
 def index():
     return flask.redirect(flask.url_for('schedule', period='2014Q2'))
@@ -51,6 +58,8 @@ def schedule(period):
         flask.abort(404)
     with open(path) as fp:
         data = list(yaml.load_all(fp))
+    for item in data:
+        process_item(item)
     data.sort(key=lambda item: item['schedule'][0])
     if flask.g.account:
         favs = db.get_favorites(flask.g.user_id)
@@ -129,14 +138,18 @@ def save_settings():
     db.save_settings(flask.g.user_id, flask.request.get_json())
     return flask.jsonify(ok=True)
 
-@app.template_filter()
-def format_date(s):
+def parse_date(s):
     date, time = s.split(' ')
     m, d = map(int, date.split('-'))
     today = datetime.date.today()
-    date = datetime.date(today.year, m, d)
+    h, min = map(int, time.split(':'))
+    return datetime.datetime(today.year, m, d, h, min)
+
+@app.template_filter()
+def format_date(s):
+    date = parse_date(s)
     weekday = u'월화수목금토일'[date.weekday()]
-    return u'%d/%d (%s)' % (m, d, weekday)
+    return u'%s (%s)' % (date.strftime('%m/%d'), weekday)
 
 @app.template_filter()
 def format_time(s):
