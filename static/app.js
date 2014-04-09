@@ -133,7 +133,7 @@ if ($('body').is('.logged-in')) {
 }
 
 // Disable lazy loading on mobile browsers.
-if (!/i(Phone|Pad|Pod)|Android/.test(navigator.userAgent)) {
+if (!/i(Phone|Pad|Pod)|Android|Safari/.test(navigator.userAgent)) {
     document.documentElement.className += ' b-fade';
     window.blazy = new Blazy;
 } else {
