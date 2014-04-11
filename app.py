@@ -40,12 +40,18 @@ def require_login():
     if not flask.g.account:
         flask.abort(403)
 
-def process_item(item):
-    date = parse_date(item['schedule'][0])
+def next_schedule(date):
     day = datetime.timedelta(days=1)
-    if date + day < datetime.datetime.now():
+    while date + day < datetime.datetime.now():
         date = date + 7 * day
-        item['schedule'][0] = date.strftime('%m-%d %H:%M')
+    return date
+
+def process_item(item):
+    date = next_schedule(parse_date(item['schedule'][0]))
+    item['schedule'][0] = date.strftime('%m-%d %H:%M')
+    if len(item.get('schedule_kr', [])) == 2:
+        date = next_schedule(parse_date(item['schedule_kr'][0]))
+        item['schedule_kr'][0] = date.strftime('%m-%d %H:%M')
 
 @app.route('/')
 def index():
