@@ -8,7 +8,9 @@ schedule:
 - - MX
   - BS11
   - nico
-schedule_kr: ANIPLUS
+schedule_kr:
+- 04-15 23:00
+- ANIPLUS
 source: etc
 studio: 샤프트
 title:
@@ -435,7 +437,7 @@ studio: 화이트 폭스
 title:
   en: Gochūmon wa Usagi Desu ka?
   ja: ご注文はうさぎですか?
-  ko: 주문은 토끼입니까?
+  ko: 주문하신 건 토끼인가요?
 website: http://www.gochiusa.com/
 ---
 ann_id: 15972
@@ -462,7 +464,9 @@ image: ann15852.jpg
 schedule:
 - 04-11 00:50
 - CX
-schedule_kr: ANIPLUS
+schedule_kr:
+- 04-17 22:00
+- ANIPLUS
 source: manga
 studio: 타츠노코 프로덕션
 title:
@@ -478,7 +482,9 @@ image: ann15759.jpg
 schedule:
 - 04-11 01:20
 - CX
-schedule_kr: ANIPLUS
+schedule_kr:
+- 04-14 22:00
+- ANIPLUS
 source: lightnovel
 studio: A-1 픽쳐스
 title:
@@ -567,7 +573,8 @@ schedule:
 - 04-04 02:19
 - MBS
 schedule_kr:
-- 04-10 22:00
+#- 04-10 22:00
+- 04-17 23:00
 - ANIPLUS
 source: manga
 studio: 디오메디아
@@ -635,7 +642,9 @@ image: ann15790.jpg
 schedule:
 - 04-12 01:35
 - MX
-schedule_kr: ANIPLUS
+schedule_kr:
+- 04-14 23:30
+- ANIPLUS
 source: lightnovel
 studio: AIC PLUS+
 title:
