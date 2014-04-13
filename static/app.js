@@ -68,7 +68,7 @@ if ($('body').is('.logged-in')) {
 
     function updateSettings(key, value) {
         AppState.settings[key] = value;
-        $.ajax({
+        return $.ajax({
             type: 'POST',
             url: '/settings',
             data: JSON.stringify(AppState.settings),
@@ -130,6 +130,12 @@ if ($('body').is('.logged-in')) {
         var state = $el.find('input:checkbox').prop('checked');
         $el.toggleClass('state-fav', state).trigger('stateChange');
     });
+
+    function updateSettings(key, value) {
+        AppState.settings[key] = value;
+        location.search = $.param(AppState.settings);
+        return $.Deferred().reject();
+    }
 }
 
 // Disable lazy loading on mobile browsers.
@@ -141,3 +147,15 @@ if (!/i(Phone|Pad|Pod)|Android|Safari/.test(navigator.userAgent)) {
         this.src = this.getAttribute('data-src');
     });
 }
+
+$('.prefer-kr').on('stateChange', function(event, data) {
+    $(this).find('a').removeClass('active');
+    var state = Boolean(AppState.settings.preferKR);
+    $(this).find(state ? '.on' : '.off').addClass('active');
+}).on('click', 'a', function(event) {
+    updateSettings('preferKR', $(this).is('.on')).then(function() {
+        location.reload();
+    });
+    $(event.delegateTarget).trigger('stateChange');
+    return false;
+}).trigger('stateChange');

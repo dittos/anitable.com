@@ -45,7 +45,7 @@ def pop_temp_session(sid):
         return None
     return json.loads(value)
 
-SETTINGS_KEYS = ('onlyFav', )
+SETTINGS_KEYS = ('onlyFav', 'preferKR')
 
 def save_settings(user_id, settings):
     data = {}

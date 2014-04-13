@@ -68,12 +68,23 @@
 
 <div class="container">
     <div class="page-header">
-    {% if g.account %}
-        <div class="only-fav">
-            <a href="#all" class="off">전체 작품</a>
-            <a href="#only-fav" class="on">관심 작품만</a>
+        <div class="settings">
+        {% if g.account %}
+            <div class="settings-item only-fav">
+                <div class="switch">
+                    <a href="#all" class="off">전체</a><!--
+                    --><a href="#only-fav" class="on">관심 작품만</a>
+                </div>
+            </div>
+        {% endif %}
+            <div class="settings-item prefer-kr">
+                <label>정렬:</label>
+                <div class="switch">
+                    <a href="#jp" class="off jp">일본</a><!--
+                    --><a href="#kr" class="on kr">한국</a>
+                </div>
+            </div>
         </div>
-    {% endif %}
         <h1 class="page-title">2014년 4월 신작</h1>
     </div>
 

@@ -2,6 +2,15 @@
 @header-height: 60px;
 @grid-spacing: 10px;
 
+.expand-hitbox (@delta) {
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        top: -@delta; left: -@delta; right: -@delta; bottom: -@delta;
+    }
+}
+
 body {
     margin: 0;
     color: #444;
@@ -113,24 +122,37 @@ form {
 .page-header {
     margin: 0 0 20px;
     position: relative;
-    .only-fav {
+    .settings {
         position: absolute;
-        line-height: 20px;
         right: 0;
-    
-        a {
-            text-decoration: none;
-            margin-left: 10px;
-            color: #666;
-        }
-        a:hover {
-            color: #27ae60;
-        }
-        .active {
-            font-weight: bold;
-            color: #27ae60;
-        }
     }
+    .settings-item {
+        float: left;
+        margin-left: 10px;
+    }
+}
+.settings .switch {
+    border: 1px solid #27ae60;
+    line-height: 20px;
+    display: inline-block;
+
+    a {
+        text-decoration: none;
+        padding: 0 5px;
+        color: #666;
+        display: inline-block;
+    }
+    a:hover {
+        color: #27ae60;
+    }
+    .active {
+        font-weight: bold;
+        background-color: #27ae60;
+        color: #fff !important;
+    }
+}
+.settings a:not(.active) {
+    .expand-hitbox (12px);
 }
 .items {
     clear: both;
@@ -203,14 +225,6 @@ html.cssgradients .item-overlay {
     line-height: @size;
     text-align: center;
     border-radius: 999em;
-}
-.expand-hitbox (@delta) {
-    position: relative;
-    &:after {
-        content: "";
-        position: absolute;
-        top: -@delta; left: -@delta; right: -@delta; bottom: -@delta;
-    }
 }
 .item-actions {
     position: absolute;

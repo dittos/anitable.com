@@ -42,16 +42,23 @@ def require_login():
 
 def next_schedule(date):
     day = datetime.timedelta(days=1)
-    while date + day < datetime.datetime.now():
+    thres = datetime.timedelta(hours=12)
+    while date + thres < datetime.datetime.now():
         date = date + 7 * day
     return date
+
+def get_schedule_kr(item):
+    if len(item.get('schedule_kr', [])) != 2:
+        return None
+    return item['schedule_kr'][0]
 
 def process_item(item):
     date = next_schedule(parse_date(item['schedule'][0]))
     item['schedule'][0] = date.strftime('%m-%d %H:%M')
-    if len(item.get('schedule_kr', [])) == 2:
-        date = next_schedule(parse_date(item['schedule_kr'][0]))
-        item['schedule_kr'][0] = date.strftime('%m-%d %H:%M')
+    date_kr = get_schedule_kr(item)
+    if date_kr:
+        date_kr = next_schedule(parse_date(date_kr))
+        item['schedule_kr'][0] = date_kr.strftime('%m-%d %H:%M')
 
 @app.route('/')
 def index():
@@ -62,16 +69,24 @@ def schedule(period):
     path = 'data/%s/schedule.yml' % period
     if not os.path.exists(path):
         flask.abort(404)
+
+    if flask.g.account:
+        favs = db.get_favorites(flask.g.user_id)
+        settings = db.get_settings(flask.g.user_id)
+    else:
+        favs = []
+        settings = {'preferKR': flask.request.args.get('preferKR') == 'true'}
+    
     with open(path) as fp:
         data = list(yaml.load_all(fp))
     for item in data:
         process_item(item)
-    data.sort(key=lambda item: item['schedule'][0])
-    if flask.g.account:
-        favs = db.get_favorites(flask.g.user_id)
+    
+    if settings['preferKR']:
+        data.sort(key=lambda item: get_schedule_kr(item) or item['schedule'][0])
     else:
-        favs = []
-    settings = db.get_settings(flask.g.user_id)
+        data.sort(key=lambda item: item['schedule'][0])
+
     return flask.render_template('index.html', data=data, favs=favs, settings=settings)
 
 @app.route('/media/<path:path>')
