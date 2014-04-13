@@ -82,7 +82,7 @@ def schedule(period):
     for item in data:
         process_item(item)
     
-    if settings['preferKR']:
+    if settings.get('preferKR'):
         data.sort(key=lambda item: get_schedule_kr(item) or item['schedule'][0])
     else:
         data.sort(key=lambda item: item['schedule'][0])
