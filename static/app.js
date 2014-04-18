@@ -18,6 +18,8 @@ items.on('stateChange', function() {
     checkbox.prop('checked', fav);
 });
 
+var updateSettings;
+
 if ($('body').is('.logged-in')) {
     function requestFavStateUpdate(id, state) {
         var url = state ? '/fav' : '/fav/remove';
@@ -66,7 +68,7 @@ if ($('body').is('.logged-in')) {
         $el.data('activeRequest', req).trigger('stateChange');
     });
 
-    function updateSettings(key, value) {
+    updateSettings = function(key, value) {
         AppState.settings[key] = value;
         return $.ajax({
             type: 'POST',
@@ -95,7 +97,7 @@ if ($('body').is('.logged-in')) {
     }).trigger('stateChange');
 
     $(function() {
-        $.each(AppState.flashes, function(i, message) {
+        $.each(AppState.flashes || [], function(i, message) {
             showToast(message, 5000);
         });
     });
@@ -131,7 +133,7 @@ if ($('body').is('.logged-in')) {
         $el.toggleClass('state-fav', state).trigger('stateChange');
     });
 
-    function updateSettings(key, value) {
+    updateSettings = function(key, value) {
         AppState.settings[key] = value;
         location.search = $.param(AppState.settings);
         return $.Deferred().reject();
