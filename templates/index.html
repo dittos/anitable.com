@@ -85,7 +85,7 @@
                 </div>
             </div>
         </div>
-        <h1 class="page-title">2014년 4월 신작</h1>
+        <h1 class="page-title">{{ period|period_readable }} 신작</h1>
     </div>
 
     <form method="post" action="{{ url_for('save') }}" class="save-form">
@@ -93,7 +93,7 @@
     {% for item in data %}
         <div class="item" data-id="{{ item.id }}">
         <div class="item-inner">
-            <div class="item-poster-wrap"><img src="{{ placeholder_url }}" data-src="{{ item.image|thumb_url }}" width="{{ config.THUMB_SIZE[0] }}" height="{{ config.THUMB_SIZE[1] }}" class="b-lazy item-poster" alt="{{ item.title.ko }}"></div>
+            <div class="item-poster-wrap"><img src="{{ placeholder_url }}" data-src="{{ item.thumb_url }}" width="{{ config.THUMB_SIZE[0] }}" height="{{ config.THUMB_SIZE[1] }}" class="b-lazy item-poster" alt="{{ item.title.ko }}"></div>
             <div class="item-frame">
             <div class="item-overlay">
                 <h3 class="item-title">{{ item.title.ko }}</h3>

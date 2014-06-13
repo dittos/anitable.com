@@ -1,24 +1,35 @@
 import hashlib
 import yaml
 
-path = 'data/2014Q2/schedule.yml'
+period = '2014Q3'
+path = 'data/%s/schedule.yml' % period
 data = list(yaml.load_all(open(path)))
 
-ids = set()
+ids = []
 
 for item in data:
-    if 'id' not in item:
+    id = item.get('id')
+    if not id:
         ann_id = item.get('ann_id')
         if ann_id:
-            item['id'] = hashlib.sha1('ann%d' % ann_id).hexdigest()[:8]
+            id = hashlib.sha1('ann%d' % ann_id).hexdigest()[:8]
         else:
-            item['id'] = hashlib.sha1('t%s' % item['title']['en']).hexdigest()[:8]
+            title = item['title']
+            if isinstance(title, dict):
+                title = title['en']
+            id = hashlib.sha1('t%s' % title.encode('utf-8')).hexdigest()[:8]
 
-    if item['id'] in ids:
+    if id in ids:
         print 'Error: duplicate id %s (%r)' % (item['id'], item)
         break
 
-    ids.add(item['id'])
+    ids.append(id)
 
-with open(path, 'w') as fp:
-    yaml.dump_all(data, fp, allow_unicode=True, default_flow_style=False)
+data = open(path).read()
+if data.startswith('---'):
+    data = data[len('---'):]
+data = data.split('\n---')
+for i, item in enumerate(data):
+    print '---'
+    print 'id: ' + ids[i]
+    print item.strip()

@@ -52,13 +52,17 @@ def get_schedule_kr(item):
         return None
     return item['schedule_kr'][0]
 
-def process_item(item):
+def process_item(item, period):
     date = next_schedule(parse_date(item['schedule'][0]))
     item['schedule'][0] = date.strftime('%m-%d %H:%M')
     date_kr = get_schedule_kr(item)
     if date_kr:
         date_kr = next_schedule(parse_date(date_kr))
         item['schedule_kr'][0] = date_kr.strftime('%m-%d %H:%M')
+    if isinstance(item['title'], basestring):
+        item['title'] = {'ko': item['title']}
+    if 'image' in item:
+        item['thumb_url'] = flask.url_for('media', path='%s/images/thumb/%s' % (period, item['image']))
 
 @app.route('/')
 def index():
@@ -80,14 +84,14 @@ def schedule(period):
     with open(path) as fp:
         data = list(yaml.load_all(fp))
     for item in data:
-        process_item(item)
+        process_item(item, period)
     
     if settings.get('preferKR'):
         data.sort(key=lambda item: get_schedule_kr(item) or item['schedule'][0])
     else:
         data.sort(key=lambda item: item['schedule'][0])
 
-    return flask.render_template('index.html', data=data, favs=favs, settings=settings)
+    return flask.render_template('index.html', period=period, data=data, favs=favs, settings=settings)
 
 @app.route('/media/<path:path>')
 def media(path):
@@ -212,10 +216,6 @@ def source_readable(s):
     return SOURCE_TYPE_MAP.get(s, '')
 
 @app.template_filter()
-def thumb_url(path):
-    return flask.url_for('media', path='2014Q2/images/thumb/%s' % path)
-
-@app.template_filter()
 def enha_link(ref):
     t = ref.rsplit('#', 1)
     if len(t) == 2:
@@ -227,6 +227,13 @@ def enha_link(ref):
     if anchor:
         url += '#' + urllib.quote(anchor.encode('utf-8'))
     return url
+
+QUARTERS = 1, 4, 7, 10
+
+@app.template_filter()
+def period_readable(p):
+    year, quarter = p.split('Q')
+    return u'%s년 %s월' % (year, QUARTERS[int(quarter) - 1])
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')

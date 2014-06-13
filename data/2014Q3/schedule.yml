@@ -1,0 +1,434 @@
+---
+id: 9819a637
+title: 아카메가 벤다!
+enha_ref: 아카메가 벤다!
+schedule:
+- 07-07 00:00 #Mon
+- MX
+studio: 화이트 폭스
+source: manga
+website: http://akame.tv/
+ann_id: 15919
+image: ann15919.jpg
+---
+id: ad17e29b
+title: 월간순정 노자키군
+enha_ref: 월간순정 노자키군
+schedule:
+- 07-07 01:05 #Mon
+- TX
+studio: 동화공방
+source: manga
+website: http://nozakikun.tv/
+ann_id: 16036
+image: ann16036.jpg
+---
+id: 047ca16c
+title: DRAMAtical Murder
+enha_ref: DRAMAtical Murder
+schedule:
+- 07-07 01:35 #Mon
+- TX
+studio: NAZ
+source: visualnovel
+website: http://dmmd-anime.com/
+ann_id: 16101
+image: ann16101.jpg
+---
+id: 72e9c77d
+title: 정령사의 검무
+enha_ref: 정령사의 검무
+schedule:
+- 07-14 20:30 #Mon
+- AT-X
+studio: TNK
+source: lightnovel
+website: http://www.bladedance.tv/
+ann_id: 16040
+#---
+#title: 미나라이 디바
+##enha_ref: 미나라이 디바
+#schedule:
+#- 21:00 Mon
+#- NOTTV
+#ann_id: 16099
+image: ann16040.jpg
+---
+id: 56889d9c
+title: 히메고토
+enha_ref: 히메고토
+schedule:
+- 07-07 23:54 #Mon
+- BS11
+studio: 아사시
+duration: 6m
+eps: 13
+source: 4koma
+website: http://www.himegoto-tv.jp/
+ann_id: 15977
+image: ann15977.jpg
+---
+id: 5245d2b3
+title: 아오하라이드
+#enha_ref: 아오하라이드
+schedule:
+- 07-08 00:00 #Tue
+- MX
+studio: 프로덕션 I.G
+eps: 12
+source: manga
+website: http://aoha-anime.com/
+ann_id: 15817
+image: ann15817.jpg
+---
+id: 6287ef15
+title: 하나야마타
+enha_ref: 하나야마타
+schedule:
+- 07-08 01:35 #Tue
+- TX
+studio: 매드하우스
+source: manga
+website: http://hanayamata.com/
+ann_id: 15775
+image: ann15775.jpg
+---
+id: a7a521de
+title: Re:␣ 하마토라 # 리플라이 하마토라 (2기)
+enha_ref: 하마토라
+schedule:
+- 07-08 02:05 #Tue
+- TX
+studio: 레르케 # NAZ에서 분사한 제작사.
+source: original
+website: http://hamatorapj.com/reply/
+ann_id: 16085
+image: ann16085.jpg
+---
+id: ac68d7c5
+title: 모모큥 소드
+schedule:
+- 07-08 00:30 #Tue
+- MX
+studio: 프로젝트 No.9
+source: lightnovel
+website: http://momokyun.com/
+ann_id: 15997
+image: ann15997.jpg
+---
+id: 136a8f75
+title: 마지모지 루루모
+schedule:
+- 07-09 21:00 #Wed
+- AT-X
+studio: J.C.스태프
+source: manga
+website: http://anime-rurumo.com/
+ann_id: 16094
+image: ann16094.jpg
+---
+id: 765a73ba
+title: 야마노스스메 세컨드 시즌
+enha_ref: 야마노스스메
+schedule:
+- 07-09 22:00 #Wed
+- MX
+studio: 8비트
+duration: 15m
+eps: 24
+source: manga
+website: http://www.yamanosusume.com/
+ann_id: 15813
+image: ann15813.jpg
+---
+id: 06b20afb
+title: 막말Rock!
+schedule:
+- 07-02 23:30 #Wed
+- MX
+studio: 스튜디오 딘
+source: game
+website: http://bakumatsu.maql.co.jp/anime/
+ann_id: 15992
+image: ann15992.jpg
+---
+id: d5e31f90
+title: Free! -Eternal Summer-
+enha_ref: Free!
+schedule:
+- 07-03 00:00 #Thu
+- MX
+studio: 교토 애니메이션
+source: lightnovel
+website: http://iwatobi-sc.com/
+ann_id: 16032
+image: ann16032.jpg
+---
+id: a78094f3
+title: LOVE STAGE!
+enha_ref: LOVE STAGE!
+schedule:
+- 07-10 01:05 #Thu
+- MX
+studio: J.C.스태프
+source: manga
+website: http://lovestage-tv.jp/
+ann_id: 15846
+image: ann15846.jpg
+---
+id: 7ee23191
+title: Fate/kaleid liner 프리즈마☆이리야 2wei!
+enha_ref: Fate/kaleid liner 프리즈마☆이리야
+schedule:
+- 07-10 01:35 #Thu
+- MX
+studio: 실버 링크
+source: manga
+website: http://anime.prisma-illya.jp/
+ann_id: 15630
+image: ann15630.jpg
+---
+id: 32de6697
+title: 글래스 립
+enha_ref: 글래스 립
+schedule:
+- 07-03 22:30 #Thu
+- MX
+studio: P.A.Works
+source: original
+website: http://glasslip.jp/
+ann_id: 15901
+image: ann15901.jpg
+---
+id: 44c66f4c
+title: 백은의 의지 아르제보른
+schedule:
+- 07-03 23:00 #Thu
+- MX
+studio: Xebec
+source: original
+website: http://argevollen.com/
+ann_id: 16100
+image: ann16100.jpg
+---
+id: edda1c70
+title: 도쿄 구울
+enha_ref: 도쿄 구울
+schedule:
+- 07-04 00:00 #Fri
+- MX
+studio: 스튜디오 삐에로
+source: manga
+website: http://www.maql.co.jp/special/tokyoghoul/
+ann_id: 16087
+image: ann16087.jpg
+---
+id: d5e70ee5
+title: 잔향의 테러
+enha_ref: 잔향의 테러
+schedule:
+- 07-11 00:50 #Fri
+- CX # 노이타미나
+studio: Mappa
+eps: 11
+source: original
+website: http://terror-in-tokyo.com/
+ann_id: 15974
+image: ann15974.jpg
+---
+id: 0e009998
+title: 신 스트레인지 플러스
+enha_ref: 스트레인지 플러스
+schedule:
+- 07-04 01:00 #Fri
+- TVS
+duration: 5m
+studio: 세븐
+source: manga
+website: http://www.dreamcreation.co.jp/stpl/
+ann_id: 16092
+image: StrangePlus2.jpg
+#---
+#title: PSYCHO-PASS 신편집판
+#enha_ref: PSYCHO-PASS
+#schedule:
+#- 01:20 Fri
+#- CX # 노이타미나
+#---
+#title: RAIL WARS
+#enha_ref: RAIL WARS
+#schedule:
+#- 01:46 Fri
+#- TBS
+#ann_id: 16039
+---
+id: aea61004
+title: 페르소나 4 the Golden ANIMATION
+enha_ref: 페르소나 4 the Golden ANIMATION
+schedule:
+- 07-11 01:49 #Fri
+- MBS
+studio: A-1 픽쳐스
+source: game
+website: http://www.p4ga.jp/
+ann_id: 16027
+image: ann16027.jpg
+---
+id: 8d84bc11
+title: "아이마이미: 망상 카타스트로피" # 2기
+enha_ref: 아이마이미
+schedule:
+- 07-11 02:05 #Fri
+- TVS
+studio: 세븐
+source: manga
+website: http://www.dreamcreation.co.jp/aimaimi/
+ann_id: 16093
+image: ann16093.jpg
+---
+id: 76956b3f
+title: 평범한 여고생이 지역 아이돌을 해 보았다
+schedule:
+- 07-04 02:16 #Fri
+- TBS
+studio: Feel
+source: 4koma
+website: http://www.tbs.co.jp/anime/locodol/
+ann_id: 15915
+image: ann15915.jpg
+---
+id: 1bdb0be2
+title: 흑집사 Book of Circus
+enha_ref: 흑집사
+schedule:
+- 07-11 02:19 #Fri
+- MBS
+studio: A-1 픽쳐스
+source: manga
+website: http://www.kuroshitsuji.tv/
+ann_id: 16030
+image: ann16030.jpg
+---
+id: 73651fb5
+title: 도쿄ESP
+enha_ref: 도쿄ESP
+schedule:
+- 07-12 01:35 #Sat
+- MX
+studio: Xebec
+source: manga
+website: http://www.tokyo-esp.org/
+ann_id: 16078
+image: ann16078.jpg
+---
+id: e44c7106
+title: 노부나가 콘체르토
+schedule:
+- 07-12 01:50 #Sat
+- CX # 노이타미나 아님
+#studio: 
+source: manga
+website: http://www.fujitv.co.jp/nobunaga-concerto-anime/
+ann_id: 16081
+image: NobunagaConcerto.jpg
+---
+id: 9accfdcc
+title: 소드 아트 온라인 II
+enha_ref: 소드 아트 온라인/애니메이션
+schedule:
+- 07-05 23:30 #Sat
+- MX
+studio: A-1 픽쳐스
+source: lightnovel
+website: http://www.swordart-online.net/phantom/
+ann_id: 15804
+image: ann15804.jpg
+---
+id: 9a6bc859
+title: 알드노아 제로 # Aldnoah.Zero
+enha_ref: 알드노아 제로
+schedule:
+- 07-06 00:00 #Sun
+- MX
+studio:
+- A-1 픽쳐스
+- 트로이카
+source: original
+website: http://www.aldnoahzero.com/
+ann_id: 16028
+image: AldnoahZero.jpg
+---
+id: e4d4ecc7
+title: 전국 바사라 Judge End
+enha_ref: 전국 바사라 시리즈
+schedule:
+- 07-06 01:50 #Sun
+- NTV
+studio: 텔레콤 애니메이션 필름
+eps: 12
+source: game
+website: http://www.ntv.co.jp/basara_je/
+image: BasaraJudgeEnd.jpg
+---
+id: d2ced235
+title: 바라카몬
+enha_ref: 바라카몬
+schedule:
+- 07-06 02:20 #Sun
+- NTV
+studio: 키네마 시트러스
+source: manga
+website: http://www.barakamon.jp/
+ann_id: 16083
+image: ann16083.jpg
+---
+id: 80ef6ed1
+title: 서바게부!
+schedule:
+- 07-06 22:30 #Sun
+- MX
+studio: 삐에로 플러스
+source: manga
+website: http://sabagebu.com/
+ann_id: 15600
+image: ann15600.jpg
+---
+id: 89648397
+title: 스페이스 댄디 시즌 2
+enha_ref: 스페이스 댄디
+schedule:
+- 07-06 23:30 #Sun
+- MX
+studio: 본즈
+duration: 24m
+source: original
+website: http://www.space-dandy.com/
+ann_id: 16029
+image: SpaceDandy2.jpg
+---
+id: 1be46701
+title: 하나모노가타리
+enha_ref: 꽃 이야기
+schedule:
+- 08-16 19:00 #Sun
+- MX
+eps: 5
+studio: 샤프트
+source: lightnovel
+website: http://www.monogatari-series.com/
+ann_id: 15973
+#---
+#title: 인생
+image: ann15973.jpg
+---
+id: a54194fc
+title: 미소녀 전사 세일러 문 크리스탈
+enha_ref: 미소녀 전사 세일러 문 크리스탈
+schedule:
+- 07-05 19:00 #Sat
+- nico
+studio: 토에이
+source: manga
+website: http://sailormoon-official.com/animation/
+ann_id: 15693
+image: ann15693.jpg
