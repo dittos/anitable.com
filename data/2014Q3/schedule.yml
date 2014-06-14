@@ -237,7 +237,7 @@ ann_id: 15974
 image: ann15974.jpg
 ---
 id: 0e009998
-title: 신 스트레인지 플러스
+title: 스트레인지 플러스 2기
 enha_ref: 스트레인지 플러스
 schedule:
 - 07-04 01:00 #Fri
@@ -245,7 +245,7 @@ schedule:
 duration: 5m
 studio: 세븐
 source: manga
-website: http://www.dreamcreation.co.jp/stpl/
+website: http://dreamcreation.co.jp/stpl2/
 ann_id: 16092
 image: StrangePlus2.jpg
 #---
@@ -254,13 +254,18 @@ image: StrangePlus2.jpg
 #schedule:
 #- 01:20 Fri
 #- CX # 노이타미나
-#---
-#title: RAIL WARS
-#enha_ref: RAIL WARS
-#schedule:
-#- 01:46 Fri
-#- TBS
-#ann_id: 16039
+---
+id: 74a4d5ca
+title: RAIL WARS
+enha_ref: RAIL WARS
+schedule:
+- 07-04 01:46 #Fri
+- TBS
+ann_id: 16039
+studio: 파쇼네
+source: lightnovel
+image: ann16039.jpg
+website: http://railwars.jp/
 ---
 id: aea61004
 title: 페르소나 4 the Golden ANIMATION
