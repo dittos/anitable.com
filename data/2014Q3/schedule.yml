@@ -45,14 +45,19 @@ studio: TNK
 source: lightnovel
 website: http://www.bladedance.tv/
 ann_id: 16040
-#---
-#title: 미나라이 디바
-##enha_ref: 미나라이 디바
+image: ann16040.jpg
+---
+id: 4f93ed71
+title: 미나라이 디바
+#enha_ref: 미나라이 디바
 #schedule:
 #- 21:00 Mon
 #- NOTTV
-#ann_id: 16099
-image: ann16040.jpg
+#studio: 
+source: original
+website: http://minaraidiva.jp/
+ann_id: 16099
+image: MinaraiDiva.jpg
 ---
 id: 56889d9c
 title: 히메고토
@@ -108,7 +113,7 @@ image: ann16085.jpg
 id: ac68d7c5
 title: 모모큥 소드
 schedule:
-- 07-08 00:30 #Tue
+- 07-09 00:30 #Wed
 - MX
 studio: 프로젝트 No.9
 source: lightnovel
@@ -248,12 +253,6 @@ source: manga
 website: http://dreamcreation.co.jp/stpl2/
 ann_id: 16092
 image: StrangePlus2.jpg
-#---
-#title: PSYCHO-PASS 신편집판
-#enha_ref: PSYCHO-PASS
-#schedule:
-#- 01:20 Fri
-#- CX # 노이타미나
 ---
 id: 74a4d5ca
 title: RAIL WARS
@@ -363,6 +362,18 @@ website: http://www.aldnoahzero.com/
 ann_id: 16028
 image: AldnoahZero.jpg
 ---
+id: c6396d50
+title: 소년 헐리우드 -Holly Stage for 49-
+#enha_ref: 소년 헐리우드
+schedule:
+- 07-06 01:00 #Sun
+- MX
+studio: ZEXCS
+source: original
+website: http://www.starchild.co.jp/special/shonen-hollywood-anime/on-air/
+ann_id: 16084
+image: ann16084.jpg
+---
 id: e4d4ecc7
 title: 전국 바사라 Judge End
 enha_ref: 전국 바사라 시리즈
@@ -422,9 +433,19 @@ studio: 샤프트
 source: lightnovel
 website: http://www.monogatari-series.com/
 ann_id: 15973
-#---
-#title: 인생
 image: ann15973.jpg
+---
+id: 1255baf4
+title: 인생
+enha_ref: 인생(라이트 노벨)
+eps: 13
+#schedule:
+#- MX
+studio: Feel
+source: lightnovel
+website: http://www.vap.co.jp/jinsei/
+ann_id: 16035
+image: Jinsei.jpg
 ---
 id: a54194fc
 title: 미소녀 전사 세일러 문 크리스탈
