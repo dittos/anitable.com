@@ -104,9 +104,13 @@
                     {% endwith %}
                 </div>
                 <div class="item-schedule item-schedule-jp">
+                {% if item.schedule %}
                     <span class="date">{{ item.schedule[0]|format_date }}</span>
                     <span class="time">{{ item.schedule[0]|format_time }}</span>
                     <span class="broadcasts">({{ item.schedule[1]|multiple }})</span>
+                {% else %}
+                    <span class="date">방영일 미정</span>
+                {% endif %}
                 </div>
                 {% if item.schedule_kr %}
                 <div class="item-schedule item-schedule-kr">

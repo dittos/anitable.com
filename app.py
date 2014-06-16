@@ -47,14 +47,20 @@ def next_schedule(date):
         date = date + 7 * day
     return date
 
+def get_schedule(item):
+    if 'schedule' not in item:
+        return None
+    return item['schedule'][0]
+
 def get_schedule_kr(item):
     if len(item.get('schedule_kr', [])) != 2:
         return None
     return item['schedule_kr'][0]
 
 def process_item(item, period):
-    date = next_schedule(parse_date(item['schedule'][0]))
-    item['schedule'][0] = date.strftime('%m-%d %H:%M')
+    if 'schedule' in item:
+        date = next_schedule(parse_date(item['schedule'][0]))
+        item['schedule'][0] = date.strftime('%m-%d %H:%M')
     date_kr = get_schedule_kr(item)
     if date_kr:
         date_kr = next_schedule(parse_date(date_kr))
@@ -63,6 +69,9 @@ def process_item(item, period):
         item['title'] = {'ko': item['title']}
     if 'image' in item:
         item['thumb_url'] = flask.url_for('media', path='%s/images/thumb/%s' % (period, item['image']))
+
+def nullslast(key):
+    return (key is None, key)
 
 @app.route('/')
 def index():
@@ -87,9 +96,9 @@ def schedule(period):
         process_item(item, period)
     
     if settings.get('preferKR'):
-        data.sort(key=lambda item: get_schedule_kr(item) or item['schedule'][0])
+        data.sort(key=lambda item: nullslast(get_schedule_kr(item) or get_schedule(item)))
     else:
-        data.sort(key=lambda item: item['schedule'][0])
+        data.sort(key=lambda item: nullslast(get_schedule(item)))
 
     return flask.render_template('index.html', period=period, data=data, favs=favs, settings=settings)
 
