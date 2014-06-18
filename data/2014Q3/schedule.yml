@@ -439,8 +439,9 @@ id: 1255baf4
 title: 인생
 enha_ref: 인생(라이트 노벨)
 eps: 13
-#schedule:
-#- MX
+schedule:
+- 07-06 22:00 #Sun
+- MX
 studio: Feel
 source: lightnovel
 website: http://www.vap.co.jp/jinsei/
