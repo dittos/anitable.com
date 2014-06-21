@@ -75,10 +75,13 @@ def nullslast(key):
 
 @app.route('/')
 def index():
-    return flask.redirect(flask.url_for('schedule', period='2014Q2'))
+    return flask.redirect(flask.url_for('schedule', period='2014Q3'))
 
 @app.route('/<period:period>')
 def schedule(period):
+    if app.config.get('ANIMETABLE'):
+        return flask.redirect('http://animeta.net/table/%s/' % period)
+
     path = 'data/%s/schedule.yml' % period
     if not os.path.exists(path):
         flask.abort(404)
