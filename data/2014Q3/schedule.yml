@@ -370,7 +370,7 @@ schedule:
 - MX
 studio: ZEXCS
 source: original
-website: http://www.starchild.co.jp/special/shonen-hollywood-anime/on-air/
+website: http://www.starchild.co.jp/special/shonen-hollywood-anime/
 ann_id: 16084
 image: ann16084.jpg
 ---
@@ -463,7 +463,9 @@ image: ann15693.jpg
 id: f8fb10b2
 title: 단칸방의 침략자!?
 enha_ref: 단칸방의 침략자!?
-#schedule:
+schedule:
+- 07-12 01:05 #Sat
+- MX
 studio: 실버 링크
 source: lightnovel
 website: http://corona106.tv/
