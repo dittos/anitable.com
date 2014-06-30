@@ -5,6 +5,8 @@ enha_ref: 아카메가 벤다!
 schedule:
 - 07-07 00:00 #Mon
 - MX
+schedule_kr:
+- ANIPLUS
 studio: 화이트 폭스
 source: manga
 website: http://akame.tv/
@@ -17,6 +19,8 @@ enha_ref: 월간순정 노자키군
 schedule:
 - 07-07 01:05 #Mon
 - TX
+schedule_kr:
+- ANIPLUS
 studio: 동화공방
 source: manga
 website: http://nozakikun.tv/
@@ -29,6 +33,8 @@ enha_ref: DRAMAtical Murder
 schedule:
 - 07-07 01:35 #Mon
 - TX
+schedule_kr:
+- ANIPLUS
 studio: NAZ
 source: visualnovel
 website: http://dmmd-anime.com/
@@ -41,6 +47,8 @@ enha_ref: 정령사의 검무
 schedule:
 - 07-14 20:30 #Mon
 - AT-X
+schedule_kr:
+- ANIPLUS
 studio: TNK
 source: lightnovel
 website: http://www.bladedance.tv/
@@ -50,9 +58,9 @@ image: ann16040.jpg
 id: 4f93ed71
 title: 미나라이 디바
 #enha_ref: 미나라이 디바
-#schedule:
-#- 21:00 Mon
-#- NOTTV
+schedule:
+- 07-14 21:00 #Mon
+- NOTTV
 #studio: 
 source: original
 website: http://minaraidiva.jp/
@@ -79,6 +87,8 @@ title: 아오하라이드
 schedule:
 - 07-08 00:00 #Tue
 - MX
+schedule_kr:
+- ANIPLUS
 studio: 프로덕션 I.G
 eps: 12
 source: manga
@@ -92,6 +102,8 @@ enha_ref: 하나야마타
 schedule:
 - 07-08 01:35 #Tue
 - TX
+schedule_kr:
+- ANIPLUS
 studio: 매드하우스
 source: manga
 website: http://hanayamata.com/
@@ -104,6 +116,9 @@ enha_ref: 하마토라
 schedule:
 - 07-08 02:05 #Tue
 - TX
+schedule_kr:
+- 07-11 23:00 #Fri
+- ANIMAX
 studio: 레르케 # NAZ에서 분사한 제작사.
 source: original
 website: http://hamatorapj.com/reply/
@@ -115,6 +130,8 @@ title: 모모큥 소드
 schedule:
 - 07-09 00:30 #Wed
 - MX
+schedule_kr:
+- ANIPLUS
 studio: 프로젝트 No.9
 source: lightnovel
 website: http://momokyun.com/
@@ -126,6 +143,8 @@ title: 마지모지 루루모
 schedule:
 - 07-09 21:00 #Wed
 - AT-X
+schedule_kr:
+- ANIPLUS
 studio: J.C.스태프
 source: manga
 website: http://anime-rurumo.com/
@@ -151,6 +170,8 @@ title: 막말Rock!
 schedule:
 - 07-02 23:30 #Wed
 - MX
+schedule_kr:
+- ANIPLUS
 studio: 스튜디오 딘
 source: game
 website: http://bakumatsu.maql.co.jp/anime/
@@ -163,6 +184,9 @@ enha_ref: Free!
 schedule:
 - 07-03 00:00 #Thu
 - MX
+schedule_kr:
+- 07-03 23:00 #Thu
+- ANIPLUS
 studio: 교토 애니메이션
 source: lightnovel
 website: http://iwatobi-sc.com/
@@ -187,6 +211,8 @@ enha_ref: Fate/kaleid liner 프리즈마☆이리야
 schedule:
 - 07-10 01:35 #Thu
 - MX
+schedule_kr:
+- ANIPLUS
 studio: 실버 링크
 source: manga
 website: http://anime.prisma-illya.jp/
@@ -199,6 +225,9 @@ enha_ref: 글래스 립
 schedule:
 - 07-03 22:30 #Thu
 - MX
+schedule_kr:
+- 07-04 23:00 #Fri
+- ANIPLUS
 studio: P.A.Works
 source: original
 website: http://glasslip.jp/
@@ -210,6 +239,8 @@ title: 백은의 의지 아르제보른
 schedule:
 - 07-03 23:00 #Thu
 - MX
+schedule_kr:
+- ANIPLUS
 studio: Xebec
 source: original
 website: http://argevollen.com/
@@ -222,6 +253,9 @@ enha_ref: 도쿄 구울
 schedule:
 - 07-04 00:00 #Fri
 - MX
+schedule_kr:
+- 07-09 00:00 #Thu
+- ANIMAX
 studio: 스튜디오 삐에로
 source: manga
 website: http://www.maql.co.jp/special/tokyoghoul/
@@ -234,6 +268,8 @@ enha_ref: 잔향의 테러
 schedule:
 - 07-11 00:50 #Fri
 - CX # 노이타미나
+schedule_kr:
+- ANIPLUS
 studio: Mappa
 eps: 11
 source: original
@@ -272,6 +308,8 @@ enha_ref: 페르소나 4 the Golden ANIMATION
 schedule:
 - 07-11 01:49 #Fri
 - MBS
+schedule_kr:
+- ANIPLUS
 studio: A-1 픽쳐스
 source: game
 website: http://www.p4ga.jp/
@@ -282,7 +320,7 @@ id: 8d84bc11
 title: "아이마이미: 망상 카타스트로피" # 2기
 enha_ref: 아이마이미
 schedule:
-- 07-11 02:05 #Fri
+- 07-04 02:05 #Fri
 - TVS
 studio: 세븐
 source: manga
@@ -307,6 +345,8 @@ enha_ref: 흑집사
 schedule:
 - 07-11 02:19 #Fri
 - MBS
+schedule_kr:
+- ANIPLUS
 studio: A-1 픽쳐스
 source: manga
 website: http://www.kuroshitsuji.tv/
@@ -319,6 +359,9 @@ enha_ref: 도쿄ESP
 schedule:
 - 07-12 01:35 #Sat
 - MX
+schedule_kr:
+- 07-15 23:00 #Tue
+- ANIMAX
 studio: Xebec
 source: manga
 website: http://www.tokyo-esp.org/
@@ -342,6 +385,9 @@ enha_ref: 소드 아트 온라인/애니메이션
 schedule:
 - 07-05 23:30 #Sat
 - MX
+schedule_kr:
+- 07-06 22:00 #Sun
+- ANIPLUS
 studio: A-1 픽쳐스
 source: lightnovel
 website: http://www.swordart-online.net/phantom/
@@ -354,6 +400,8 @@ enha_ref: 알드노아 제로
 schedule:
 - 07-06 00:00 #Sun
 - MX
+schedule_kr:
+- ANIPLUS
 studio:
 - A-1 픽쳐스
 - 트로이카
@@ -380,6 +428,8 @@ enha_ref: 전국 바사라 시리즈
 schedule:
 - 07-06 01:50 #Sun
 - NTV
+schedule_kr:
+- ANIPLUS
 studio: 텔레콤 애니메이션 필름
 eps: 12
 source: game
@@ -392,6 +442,8 @@ enha_ref: 바라카몬
 schedule:
 - 07-06 02:20 #Sun
 - NTV
+schedule_kr:
+- ANIPLUS
 studio: 키네마 시트러스
 source: manga
 website: http://www.barakamon.jp/
@@ -413,8 +465,11 @@ id: 89648397
 title: 스페이스 댄디 시즌 2
 enha_ref: 스페이스 댄디
 schedule:
-- 07-06 23:30 #Sun
+- 07-06 23:00 #Sun
 - MX
+schedule_kr:
+- 07-06 23:00 #Sun
+- ANIMAX
 studio: 본즈
 duration: 24m
 source: original
@@ -442,6 +497,8 @@ eps: 13
 schedule:
 - 07-06 22:00 #Sun
 - MX
+schedule_kr:
+- ANIPLUS
 studio: Feel
 source: lightnovel
 website: http://www.vap.co.jp/jinsei/
