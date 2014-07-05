@@ -6,6 +6,7 @@ schedule:
 - 07-07 00:00 #Mon
 - MX
 schedule_kr:
+- 07-09 00:00 #Wed
 - ANIPLUS
 studio: 화이트 폭스
 source: manga
@@ -20,6 +21,7 @@ schedule:
 - 07-07 01:05 #Mon
 - TX
 schedule_kr:
+- 07-08 23:00 #Tue
 - ANIPLUS
 studio: 동화공방
 source: manga
@@ -34,6 +36,7 @@ schedule:
 - 07-07 01:35 #Mon
 - TX
 schedule_kr:
+- 07-11 00:30 #Fri
 - ANIPLUS
 studio: NAZ
 source: visualnovel
@@ -88,6 +91,7 @@ schedule:
 - 07-08 00:00 #Tue
 - MX
 schedule_kr:
+- 07-10 23:30 #Thu
 - ANIPLUS
 studio: 프로덕션 I.G
 eps: 12
@@ -103,6 +107,7 @@ schedule:
 - 07-08 01:35 #Tue
 - TX
 schedule_kr:
+- 07-09 22:30 #Wed
 - ANIPLUS
 studio: 매드하우스
 source: manga
@@ -144,6 +149,7 @@ schedule:
 - 07-09 21:00 #Wed
 - AT-X
 schedule_kr:
+- 07-12 00:30 #Sat
 - ANIPLUS
 studio: J.C.스태프
 source: manga
@@ -171,6 +177,7 @@ schedule:
 - 07-02 23:30 #Wed
 - MX
 schedule_kr:
+- 07-08 22:00 #Tue
 - ANIPLUS
 studio: 스튜디오 딘
 source: game
@@ -212,6 +219,7 @@ schedule:
 - 07-10 01:35 #Thu
 - MX
 schedule_kr:
+- 07-12 00:00 #Sat
 - ANIPLUS
 studio: 실버 링크
 source: manga
@@ -240,6 +248,7 @@ schedule:
 - 07-03 23:00 #Thu
 - MX
 schedule_kr:
+- 07-09 00:30 #Wed
 - ANIPLUS
 studio: Xebec
 source: original
@@ -254,7 +263,7 @@ schedule:
 - 07-04 00:00 #Fri
 - MX
 schedule_kr:
-- 07-09 00:00 #Thu
+- 07-10 00:00 #Thu
 - ANIMAX
 studio: 스튜디오 삐에로
 source: manga
@@ -269,6 +278,7 @@ schedule:
 - 07-11 00:50 #Fri
 - CX # 노이타미나
 schedule_kr:
+- 07-11 23:30 #Fri
 - ANIPLUS
 studio: Mappa
 eps: 11
@@ -401,6 +411,7 @@ schedule:
 - 07-06 00:00 #Sun
 - MX
 schedule_kr:
+- 07-08 23:30 #Tue
 - ANIPLUS
 studio:
 - A-1 픽쳐스
@@ -429,6 +440,7 @@ schedule:
 - 07-06 01:50 #Sun
 - NTV
 schedule_kr:
+- 07-10 00:30 #Thu
 - ANIPLUS
 studio: 텔레콤 애니메이션 필름
 eps: 12
@@ -443,6 +455,7 @@ schedule:
 - 07-06 02:20 #Sun
 - NTV
 schedule_kr:
+- 07-08 22:30 #Tue
 - ANIPLUS
 studio: 키네마 시트러스
 source: manga
@@ -498,6 +511,7 @@ schedule:
 - 07-06 22:00 #Sun
 - MX
 schedule_kr:
+- 07-11 00:00 #Fri
 - ANIPLUS
 studio: Feel
 source: lightnovel
