@@ -51,6 +51,7 @@ schedule:
 - 07-14 20:30 #Mon
 - AT-X
 schedule_kr:
+- 07-17 00:00 #Thu
 - ANIPLUS
 studio: TNK
 source: lightnovel
@@ -86,7 +87,7 @@ image: ann15977.jpg
 ---
 id: 5245d2b3
 title: 아오하라이드
-#enha_ref: 아오하라이드
+enha_ref: 아오하라이드
 schedule:
 - 07-08 00:00 #Tue
 - MX
@@ -132,10 +133,12 @@ image: ann16085.jpg
 ---
 id: ac68d7c5
 title: 모모큥 소드
+enha_ref: 모모큔 소드
 schedule:
 - 07-09 00:30 #Wed
 - MX
 schedule_kr:
+- 07-15 00:00 #Tue
 - ANIPLUS
 studio: 프로젝트 No.9
 source: lightnovel
@@ -145,6 +148,7 @@ image: ann15997.jpg
 ---
 id: 136a8f75
 title: 마지모지 루루모
+enha_ref: 마지모지 루루모
 schedule:
 - 07-09 21:00 #Wed
 - AT-X
@@ -172,7 +176,8 @@ ann_id: 15813
 image: ann15813.jpg
 ---
 id: 06b20afb
-title: 막말Rock!
+title: 막부말Rock!
+enha_ref: 막부말Rock!
 schedule:
 - 07-02 23:30 #Wed
 - MX
@@ -244,6 +249,7 @@ image: ann15901.jpg
 ---
 id: 44c66f4c
 title: 백은의 의지 아르제보른
+enha_ref: 백은의 의지 아르제보른
 schedule:
 - 07-03 23:00 #Thu
 - MX
@@ -319,6 +325,7 @@ schedule:
 - 07-11 01:49 #Fri
 - MBS
 schedule_kr:
+- 07-14 23:30 #Mon
 - ANIPLUS
 studio: A-1 픽쳐스
 source: game
@@ -340,6 +347,7 @@ image: ann16093.jpg
 ---
 id: 76956b3f
 title: 평범한 여고생이 지역 아이돌을 해 보았다
+enha_ref: 평범한 여고생이 지역 아이돌을 해 보았다
 schedule:
 - 07-04 02:16 #Fri
 - TBS
@@ -356,6 +364,7 @@ schedule:
 - 07-11 02:19 #Fri
 - MBS
 schedule_kr:
+- 07-14 23:00 #Mon
 - ANIPLUS
 studio: A-1 픽쳐스
 source: manga
@@ -380,6 +389,7 @@ image: ann16078.jpg
 ---
 id: e44c7106
 title: 노부나가 콘체르토
+enha_ref: 노부나가 콘체르토
 schedule:
 - 07-12 01:50 #Sat
 - CX # 노이타미나 아님
@@ -423,7 +433,7 @@ image: AldnoahZero.jpg
 ---
 id: c6396d50
 title: 소년 헐리우드 -Holly Stage for 49-
-#enha_ref: 소년 헐리우드
+enha_ref: 소년 헐리우드
 schedule:
 - 07-06 01:00 #Sun
 - MX
@@ -446,6 +456,7 @@ studio: 텔레콤 애니메이션 필름
 eps: 12
 source: game
 website: http://www.ntv.co.jp/basara_je/
+ann_id: 16105
 image: BasaraJudgeEnd.jpg
 ---
 id: d2ced235
