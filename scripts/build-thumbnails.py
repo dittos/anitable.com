@@ -1,7 +1,7 @@
 import os
 from wand.image import Image
 
-period = '2014Q3'
+period = '2014Q4'
 remove_ann_watermark = True
 w = 233
 h = 318

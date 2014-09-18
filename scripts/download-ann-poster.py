@@ -3,7 +3,7 @@ import urllib
 from xml.etree import ElementTree
 import requests
 
-basepath = 'data/2014Q3'
+basepath = 'data/2014Q4'
 path = basepath + '/schedule.yml'
 with open(path) as fp:
     data = fp.read().split('\n---')

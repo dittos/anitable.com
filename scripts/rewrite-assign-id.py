@@ -1,7 +1,7 @@
 import hashlib
 import yaml
 
-period = '2014Q3'
+period = '2014Q4'
 path = 'data/%s/schedule.yml' % period
 data = list(yaml.load_all(open(path)))
 
