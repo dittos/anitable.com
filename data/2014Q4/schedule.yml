@@ -17,6 +17,8 @@ enha_ref: 걸 프렌드(베타)
 schedule:
 - 10-13 01:35 #Mon
 - TX
+schedule_kr:
+- ANIPLUS
 source: game
 studio: 실버 링크
 ann_id: 16127
@@ -29,6 +31,8 @@ enha_ref: 신격의 바하무트 #XXX: 프랜차이즈
 schedule:
 - 10-06 23:30 #Mon
 - SUN
+schedule_kr:
+- ANIPLUS
 source: game
 studio: Mappa
 website: http://shingekinobahamut-genesis.jp/
@@ -53,6 +57,8 @@ enha_ref: 이능배틀은 일상계 속에서
 schedule:
 - 10-07 02:05 #Tue
 - TX
+schedule_kr:
+- ANIPLUS
 source: lightnovel
 studio: 트리거
 ann_id: 16172
@@ -77,6 +83,8 @@ title: 트리니티 세븐
 schedule:
 - 10-08 01:40 #Wed
 - TX
+schedule_kr:
+- ANIPLUS
 source: manga
 studio: 세븐 아크스
 ann_id: 16174
@@ -125,6 +133,8 @@ enha_ref: 관희 챠이카 #XXX: 시리즈
 schedule:
 - 10-09 01:05 #Thu
 - MX
+schedule_kr:
+- ANIPLUS
 source: lightnovel
 studio: 본즈
 ann_id: 16117
@@ -161,6 +171,8 @@ enha_ref: SHIROBAKO
 schedule:
 - 10-09 23:30 #Thu
 - MX
+schedule_kr:
+- ANIPLUS
 source: original
 studio: P.A.Works
 ann_id: 16189
@@ -173,6 +185,8 @@ enha_ref: PSYCHO-PASS #XXX: 시리즈
 schedule:
 - 10-10 00:50 #Fri
 - CX
+schedule_kr:
+- ANIPLUS
 source: original
 studio: 프로덕션 I.G
 ann_id: 15513
@@ -199,6 +213,8 @@ enha_ref: 4월은 너의 거짓말
 schedule:
 - 10-10 01:20 #Fri
 - CX
+schedule_kr:
+- ANIPLUS
 source: manga
 studio: A-1 픽쳐스
 ann_id: 16108
@@ -211,6 +227,8 @@ enha_ref: 저, 트윈테일이 됩니다
 schedule:
 - 10-10 01:46 #Fri
 - TBS
+schedule_kr:
+- ANIPLUS
 source: lightnovel
 studio: 프로덕션 IMS
 ann_id: 16132
@@ -223,6 +241,9 @@ enha_ref: 건담 G의 레콘기스타
 schedule:
 - 10-03 01:49 #Fri
 - MBS
+schedule_kr:
+- 10-03 23:30 #Fri
+- ANIPLUS
 source: original
 studio: 선라이즈
 ann_id: 16104
@@ -273,6 +294,8 @@ enha_ref: selector infected WIXOSS #XXX: 시리즈
 schedule:
 - 10-04 01:05 #Sat
 - MX
+schedule_kr:
+- ANIPLUS
 source: original
 studio: J.C.스태프
 ann_id: 16138
@@ -337,6 +360,8 @@ enha_ref: 마탄의 왕과 바나디스
 schedule:
 - 10-04 20:00 #Sat
 - AT-X
+schedule_kr:
+- ANIPLUS
 source: lightnovel
 studio: Satelight
 ann_id: 16170
@@ -349,6 +374,8 @@ enha_ref: 잃어버린 미래를 찾아서
 schedule:
 - 10-04 20:30 #Sat
 - AT-X
+schedule_kr:
+- ANIPLUS
 source: visualnovel
 studio: Feel
 ann_id: 16169
@@ -361,6 +388,8 @@ enha_ref: "Fate/stay night/애니메이션#s-3"
 schedule:
 - 10-05 00:00 #Sun
 - MX
+schedule_kr:
+- ANIPLUS
 source: visualnovel
 studio: ufotable
 ann_id: 15843
@@ -373,6 +402,8 @@ enha_ref: 충사 #XXX: 시리즈
 schedule:
 - 10-19 00:30 #Sun
 - MX
+schedule_kr:
+- ANIPLUS
 source: manga
 studio: 아트랜드
 image: MushishiZoku2.jpg
@@ -384,6 +415,8 @@ enha_ref: 크로스앙쥬 -천사와 용의 윤무-
 schedule:
 - 10-05 01:30 #Sun
 - MX
+schedule_kr:
+- ANIPLUS
 source: original
 studio: 선라이즈
 eps: 25
@@ -421,6 +454,8 @@ enha_ref: 그리자이아의 과실
 schedule:
 - 10-05 20:30 #Sun
 - AT-X
+schedule_kr:
+- ANIPLUS
 source: visualnovel
 studio: 8비트
 ann_id: 16140
@@ -445,6 +480,8 @@ enha_ref: 천체의 메서드
 schedule:
 - 10-05 22:30 #Sun
 - MX
+schedule_kr:
+- ANIPLUS
 source: original
 studio: 3Hz
 ann_id: 16038
