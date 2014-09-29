@@ -442,6 +442,8 @@ enha_ref: 일곱개의 대죄
 schedule:
 - 10-05 17:00 #Sun
 - [MBS, TBS]
+schedule_kr:
+- ANIPLUS
 studio: A-1 픽쳐스
 source: manga
 ann_id: 16167
