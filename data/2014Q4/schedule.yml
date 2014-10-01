@@ -5,6 +5,8 @@ enha_ref: 구구레! 코쿠리상
 schedule:
 - 10-06 01:05 #Mon
 - MX
+schedule_kr:
+- ANIMAX
 source: 4koma
 studio: TMS 엔터테인먼트
 ann_id: 16123
@@ -71,6 +73,8 @@ enha_ref: 새벽의 연화
 schedule:
 - 10-07 23:00 #Tue
 - AT-X
+schedule_kr:
+- ANIMAX
 studio: 스튜디오 삐에로
 source: manga
 ann_id: 16154
@@ -121,6 +125,8 @@ enha_ref: 대도서관의 양치기
 schedule:
 - 10-09 00:30 #Thu
 - MX
+schedule_kr:
+- ANIMAX
 source: visualnovel
 studio: 후즈 엔터테인먼트
 ann_id: 16121
@@ -470,6 +476,8 @@ title: 늑대소녀와 흑왕자
 schedule:
 - 10-05 22:00 #Sun
 - MX
+schedule_kr:
+- ANIMAX
 source: manga
 studio: TYO
 ann_id: 16158
