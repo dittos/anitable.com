@@ -268,8 +268,8 @@ id: 6d8c8f20
 title: 아마기 브릴리언트 파크
 enha_ref: 아마기 브릴리언트 파크
 schedule:
-- 10-03 02:03 #Fri
-# XXX: 그 다음주부터 2:16
+- 10-07 03:40
+# XXX: 그 다음주부터?
 - TBS
 source: lightnovel
 studio: 교토 애니메이션
@@ -282,7 +282,7 @@ id: ef18fcc3
 title: 유우키 유우나는 용사다
 enha_ref: 유우키 유우나는 용사다
 schedule:
-#- 02:19 #Fri
+- 10-17 02:19 #Fri
 - MBS
 source: original
 studio: 스튜디오 5조
@@ -523,6 +523,7 @@ id: ec704e98
 title: 흐린 하늘에 웃다
 #enha_ref: 흐린 하늘에 웃다
 schedule:
+- 10-04 01:58 #Sat
 - NTV
 studio: 동화공방
 source: manga
