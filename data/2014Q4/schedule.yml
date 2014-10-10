@@ -21,6 +21,7 @@ schedule:
 - 10-13 01:35 #Mon
 - TX
 schedule_kr:
+- 10-16 23:00
 - ANIPLUS
 source: game
 studio: 실버 링크
@@ -185,6 +186,7 @@ schedule:
 - 10-09 23:30 #Thu
 - MX
 schedule_kr:
+- 10-17 00:30
 - ANIPLUS
 source: original
 studio: P.A.Works
@@ -228,6 +230,7 @@ schedule:
 - 10-10 01:20 #Fri
 - CX
 schedule_kr:
+- 10-14 00:00
 - ANIPLUS
 source: manga
 studio: A-1 픽쳐스
@@ -242,6 +245,7 @@ schedule:
 - 10-10 01:46 #Fri
 - TBS
 schedule_kr:
+- 10-13 22:30
 - ANIPLUS
 source: lightnovel
 studio: 프로덕션 IMS
