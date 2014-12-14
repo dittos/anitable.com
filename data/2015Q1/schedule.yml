@@ -93,6 +93,8 @@ enha_ref: 도쿄 구울
 schedule:
 - 01-09 00:00 #Fri
 - MX
+schedule_kr:
+- ANIMAX
 image: ann16318.jpg
 studio: 스튜디오 삐에로
 source: manga
@@ -165,6 +167,8 @@ enha_ref: 암살교실
 schedule:
 - 01-10 01:20 #Sat
 - CX
+schedule_kr:
+- ANIMAX
 image: ann16142.jpg
 studio: 레르케
 source: manga
