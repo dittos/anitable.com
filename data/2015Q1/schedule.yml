@@ -6,6 +6,9 @@ enha_ref: 성검사의 금주영창
 schedule:
 - 01-12 01:05 #Mon
 - TX
+schedule_kr:
+- 01-15 23:00 #Thu
+- ANIMAX
 image: ann16304.jpg
 source: lightnovel
 studio: 디오메디아
@@ -94,6 +97,7 @@ schedule:
 - 01-09 00:00 #Fri
 - MX
 schedule_kr:
+- 01-13 23:00 #Tue
 - ANIMAX
 image: ann16318.jpg
 studio: 스튜디오 삐에로
@@ -107,6 +111,9 @@ enha_ref: 시원찮은 그녀를 위한 육성방법
 schedule:
 - 01-09 00:50 #Fri
 - CX #노이타미나
+schedule_kr:
+- 01-09 23:00 #Fri
+- ANIMAX
 image: ann16141.jpg
 studio: A-1 픽쳐스
 website: http://www.saenai.tv/
@@ -168,6 +175,7 @@ schedule:
 - 01-10 01:20 #Sat
 - CX
 schedule_kr:
+- 01-10 23:30 #Sat
 - ANIMAX
 image: ann16142.jpg
 studio: 레르케
