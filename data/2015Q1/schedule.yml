@@ -136,6 +136,7 @@ schedule:
 - 01-09 01:46 #Fri
 - TBS
 schedule_kr:
+- 01-14 23:30 #Wed
 - ANIPLUS
 image: ann16131.jpg
 source: manga
@@ -294,6 +295,7 @@ schedule:
 - 01-11 00:30 #Sun
 - MX
 schedule_kr:
+- 01-15 00:00 #Thu
 - ANIPLUS
 image: ann16193.jpg
 source: manga
@@ -308,6 +310,7 @@ schedule:
 - 01-11 01:58 #Sun
 - MBS
 schedule_kr:
+- 01-15 00:30 #Thu
 - ANIPLUS
 image: ann16251.jpg
 studio: Wit Studio
