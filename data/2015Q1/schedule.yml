@@ -6,6 +6,9 @@ enha_ref: 성검사의 금주영창
 schedule:
 - 01-12 01:05 #Mon
 - TX
+schedule_kr:
+- 01-15 23:00 #Thu
+- ANIMAX
 image: ann16304.jpg
 source: lightnovel
 studio: 디오메디아
@@ -32,6 +35,9 @@ enha_ref: 유리쿠마 아라시
 schedule:
 - 01-06 00:30 #Tue
 - MX
+schedule_kr:
+- 01-08 23:00 #Wed
+- ANIPLUS
 image: ann16301.jpg
 source: original
 eps: 12
@@ -45,6 +51,9 @@ enha_ref: 오늘부터 신령님
 schedule:
 - 01-06 02:05 #Tue
 - TX
+schedule_kr:
+- 01-07 23:00 #Wed
+- ANIPLUS
 image: ann16255.jpg
 source: manga
 studio: TMS 엔터테인먼트
@@ -53,7 +62,7 @@ website: http://mikagesha.com/
 id: 541e33da
 ann_id: 16306
 title: 미남고교 지구방위부 LOVE!
-#enha_ref: 미남고교 지구방위부 LOVE!
+enha_ref: 미남고교 지구방위부 LOVE!
 schedule:
 - 01-07 01:40 #Wed
 - TX
@@ -81,6 +90,9 @@ enha_ref: 새여동생 마왕의 계약자
 schedule:
 - 01-08 01:35 #Thu
 - MX
+schedule_kr:
+- 01-10 00:00 #Sat
+- ANIPLUS
 image: ann16252.jpg
 website: http://anime-shinmaimaou.com/
 source: lightnovel
@@ -94,6 +106,7 @@ schedule:
 - 01-09 00:00 #Fri
 - MX
 schedule_kr:
+- 01-13 23:00 #Tue
 - ANIMAX
 image: ann16318.jpg
 studio: 스튜디오 삐에로
@@ -107,6 +120,9 @@ enha_ref: 시원찮은 그녀를 위한 육성방법
 schedule:
 - 01-09 00:50 #Fri
 - CX #노이타미나
+schedule_kr:
+- 01-09 23:00 #Fri
+- ANIMAX
 image: ann16141.jpg
 studio: A-1 픽쳐스
 website: http://www.saenai.tv/
@@ -119,6 +135,9 @@ enha_ref: 행복 그래피티
 schedule:
 - 01-09 01:46 #Fri
 - TBS
+schedule_kr:
+- 01-14 23:30 #Wed
+- ANIPLUS
 image: ann16131.jpg
 source: manga
 studio: 샤프트
@@ -131,6 +150,9 @@ enha_ref: 총황무진 파프니르
 schedule:
 - 01-09 02:16 #Fri
 - TBS
+schedule_kr:
+- 01-13 00:30 #Tue
+- ANIPLUS
 image: ann16302.jpg
 studio: 디오메디아
 source: lightnovel
@@ -155,6 +177,9 @@ enha_ref: 아이돌 마스터 신데렐라 걸즈/애니메이션
 schedule:
 - 01-10 00:00 #Sat
 - MX
+schedule_kr:
+- 01-20 22:30 #Tue
+- ANIPLUS
 image: ann16098.jpg
 source: game
 studio: A-1 픽쳐스
@@ -168,6 +193,7 @@ schedule:
 - 01-10 01:20 #Sat
 - CX
 schedule_kr:
+- 01-10 23:30 #Sat
 - ANIMAX
 image: ann16142.jpg
 studio: 레르케
@@ -181,6 +207,9 @@ title: ISUCA
 schedule:
 - 01-24 01:35 #Sat
 - MX
+schedule_kr:
+- 01-27 00:30 #Wed
+- ANIPLUS
 image: ann16128.jpg
 source: manga
 studio: 암즈
@@ -193,6 +222,9 @@ enha_ref: 데스 퍼레이드
 schedule:
 - 01-10 01:58 #Sat
 - NTV
+schedule_kr:
+- 01-15 23:30 #Thu
+- ANIPLUS
 image: ann16375.jpg
 studio: 매드하우스
 source: original
@@ -231,6 +263,9 @@ enha_ref: 듀라라라
 schedule:
 - 01-10 23:30 #Sat
 - MX
+schedule_kr:
+- 01-12 23:00 #Mon
+- ANIPLUS
 image: ann16183.jpg
 source: lightnovel
 studio: shuka
@@ -243,6 +278,9 @@ enha_ref: 알드노아. 제로
 schedule:
 - 01-11 00:00 #Sun
 - MX
+schedule_kr:
+- 01-13 23:30 #Tue
+- ANIPLUS
 image: ann16305.jpg
 source: original
 studio:
@@ -257,6 +295,9 @@ enha_ref: DOG DAYS
 schedule:
 - 01-11 00:30 #Sun
 - MX
+schedule_kr:
+- 01-15 00:00 #Thu
+- ANIPLUS
 image: ann16193.jpg
 source: manga
 studio: 세븐 아크스
@@ -269,6 +310,9 @@ enha_ref: 롤링 걸즈
 schedule:
 - 01-11 01:58 #Sun
 - MBS
+schedule_kr:
+- 01-15 00:30 #Thu
+- ANIPLUS
 image: ann16251.jpg
 studio: Wit Studio
 source: original
@@ -281,6 +325,9 @@ enha_ref: 쿠로코의 농구
 schedule:
 - 01-11 02:58 #Sun
 - MBS
+schedule_kr:
+- 01-12 23:30 #Mon
+- ANIPLUS
 image: ann16343.jpg
 source: manga
 studio: 프로덕션 I.G
@@ -293,6 +340,9 @@ enha_ref: 앱솔루트 듀오
 schedule:
 - 01-04 20:30 #Sun
 - AT-X
+schedule_kr:
+- 01-07 00:00 #Wed
+- ANIPLUS
 image: ann16330.jpg
 source: lightnovel
 studio: 8비트
@@ -314,7 +364,7 @@ website: http://yatterman.jp/
 id: 9dcba92f
 ann_id: 16248
 title: 순결의 마리아
-#enha_ref:
+enha_ref: 순결의 마리아
 schedule:
 - 01-11 22:30 #Sun
 - MX
@@ -322,12 +372,3 @@ image: ann16248.jpg
 source: manga
 studio: 프로덕션 I.G
 website: http://www.junketsu-maria.tv/
----
-id: 8f4381dc
-ann_id: 16364
-title: 헬로!! 금빛 모자이크
-enha_ref: 금빛 모자이크
-image: ann16364.jpg
-source: manga
-website: http://www.kinmosa.com/
-studio: 스튜디오 5조
